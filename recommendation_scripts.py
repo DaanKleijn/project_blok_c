@@ -12,3 +12,6 @@ def get_products(connection, product_ids):
         products.append(cursor.fetchall())
     cursor.close
     return products
+
+
+def same_price_products(connection, products):
