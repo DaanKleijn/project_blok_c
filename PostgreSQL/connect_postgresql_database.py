@@ -8,9 +8,9 @@ def connect():
     try:
         # establishes the  database connection
         connection = psycopg2.connect(host='localhost',
-                                      database='postgres',
+                                      database='huwebshop',
                                       user='postgres',
-                                      password='password')
+                                      password='postgres')
 
         # creates cursor
         cursor = connection.cursor()
@@ -26,3 +26,4 @@ def disconnect(connection, cursor):
     """Takes an active cursor and connection with a PostgreSQL database as input. Closes the cursor and connection."""
     cursor.close()
     connection.close()
+
