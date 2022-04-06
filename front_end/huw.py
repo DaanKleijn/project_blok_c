@@ -10,6 +10,7 @@ from bson.objectid import ObjectId
 app = Flask(__name__)
 app.secret_key = os.urandom(16)
 
+
 class HUWebshop(object):
     """ This class combines all logic behind the HU Example Webshop project.
     Note that all rendering is performed within the templates themselves."""
@@ -110,7 +111,7 @@ class HUWebshop(object):
         """ Within this function, we compose a nested dictionary of all
         categories that occur within the database's products collection, and
         save it to the categoryindex collection. """
-        pcatentries = self.database.products.find({},self.catlevels)
+        pcatentries = self.database.products.find({}, self.catlevels)
         index = {}
         for entry in pcatentries:
             self.reccatindex(index, entry, 0, len(self.catlevels)-1)
@@ -118,7 +119,7 @@ class HUWebshop(object):
             self.reccatcount(k, v, 0, len(self.catlevels)-1)
         self.database.categoryindex.insert_one(index)
 
-    def reccatindex(self,d,e,l,m):
+    def reccatindex(self, d, e, l, m):
         """ This subfunction of createcategoryindex() sets up the base structure
         (tree) of the categories and subcategories, leaving leaves as empty
         dicts."""
