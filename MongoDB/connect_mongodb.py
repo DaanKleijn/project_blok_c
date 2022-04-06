@@ -1,7 +1,7 @@
 import pymongo
 
 
-def connect_mdb():
+def connect():
     """Connects to the local MongoDB database."""
     # connect to database
     client = pymongo.MongoClient()
