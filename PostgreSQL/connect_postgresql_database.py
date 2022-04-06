@@ -8,9 +8,9 @@ def connect():
     try:
         # establishes the  database connection
         connection = psycopg2.connect(host='localhost',
-                                      database='postgres',
-                                      user='postgres',
-                                      password='uhswqf%#BD078')
+                                      database='huwebshop',
+                                      user='user',
+                                      password='password')
 
         # creates cursor
         cursor = connection.cursor()
