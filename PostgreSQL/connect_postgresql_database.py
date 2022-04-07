@@ -10,7 +10,9 @@ def connect():
         connection = psycopg2.connect(host='localhost',
                                       database='huwebshop',
                                       user='postgres',
-                                      password='postgres')
+                                      password='postgres',
+                                      port=5432
+                                      )
 
         # creates cursor
         cursor = connection.cursor()
@@ -26,4 +28,3 @@ def disconnect(connection, cursor):
     """Takes an active cursor and connection with a PostgreSQL database as input. Closes the cursor and connection."""
     cursor.close()
     connection.close()
-
