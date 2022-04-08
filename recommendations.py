@@ -1,28 +1,33 @@
-import load_data_sql as product_info
-import load_data_sql as selling_price
+from load_data_sql import product_price, product_gender
 import random
+import PostgreSQL.connect_postgresql_database as sql_c
 
-def simular_gender(product_info):
-    product_lst = []
-    for i in range(product_info):
-        product_lst.append(product_info)
-    index = random.randint(0, len(product_lst))
-    new_product = product_lst[index]
-    if new_product == product_info:
-        index = random.randint(0, len(product_lst))
-        new_product = product_lst[index]
-        return new_product
-    return new_product
+selling_price = product_price()
 
 
-def simular_price(selling_price):
-    product_lst = []
-    for i in range(selling_price):
-        product_lst.append(selling_price)
-    index = random.randint(0, len(product_lst))
-    new_product = product_lst[index]
-    if new_product == selling_price:
-        index = random.randint(0, len(product_lst))
-        new_product = product_lst[index]
-        return new_product
-    return new_product
+def simular_gender(product_id):
+    con, cur = sql_c.connect()
+    product_query = product_gender()
+    cur.execute(product_query, (product_id, product_id))
+    similar_products = [product_id[0] for product_id in cur.fetchall()]
+
+    index = random.randint(0, len(similar_products))
+    new_product_gender = similar_products[index]
+
+    return new_product_gender
+
+
+def simular_price(product_id):
+    con, cur = sql_c.connect()
+    product_query = product_gender()
+    cur.execute(product_query, (product_id, product_id))
+    similar_products = [product_id[0] for product_id in cur.fetchall()]
+    index = random.randint(0, len(similar_products))
+    new_product_price = similar_products[index]
+
+    return new_product_price
+
+
+if __name__ == '__main__':
+    print(simular_gender('16121'))
+    print(simular_price('16121'))
