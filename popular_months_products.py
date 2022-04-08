@@ -1,6 +1,9 @@
 import PostgreSQL.connect_postgresql_database as sql_c
 import load_data_sql as sql_l
 import product_traffic_all_time as traffic
+# TODO: account for months where there is more traffic in general. (if a product is bought and looked at 20 % more than
+#  average in a given month, but on average all products were bought and looked at 20 % more in that month, the traffic
+#  for the product should not be considered above average) -> also find a better way to formulate this.
 
 
 # update table
@@ -44,7 +47,7 @@ def calculate_popular_months_products(sql_cursor):
         traffic_per_month = traffic.get_traffic_all_months_all_time(product, months)
         popular_months = get_popular_months(traffic_per_month)
         product_popular_month += ((popular_months, product),)
-        print(popular_months, product)
+
     return product_popular_month
 
 
@@ -75,4 +78,4 @@ def update_popular_months():
 
 
 if __name__ == '__main__':
-    initiate_popular_months()
+    update_popular_months()
