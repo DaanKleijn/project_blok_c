@@ -1,4 +1,5 @@
 import PostgreSQL.connect_postgresql_database as sql_c
+import time
 
 
 # amount of product traffic over a given month.
@@ -7,12 +8,13 @@ def product_traffic_all_time_query():
     return """SELECT COUNT(ep.product__id) FROM event_products ep, sessions s 
     WHERE EXTRACT(MONTH FROM s.session_end) = %s 
     AND ep.session__id = s.session__id 
-    AND ep.product__id = %s;"""
+    AND ep.product__id = %s
+    AND ep.event_type = 'ordered';"""
 
 
 def get_traffic_one_month_all_time(month, product_id, sql_cursor):
     """
-    Takes a month (str) represented as a number (eg. '1' for januari) and a product_id (str) as input.
+    Takes a month (str) represented as a number (e.g. '1' for January) and a product_id (str) as input.
     returns the amount of times that product was looked at or bought in that month (int).
     """
     traffic_query = product_traffic_all_time_query()
@@ -50,3 +52,9 @@ def get_bar_product(traffic_per_month):
     """
     average_traffic = sum(traffic_per_month) / 12
     return average_traffic * 1.4 + 50
+
+
+if __name__ == '__main__':
+    start_time = time.time_ns()
+    print(get_traffic_all_months_all_time('40773', [str(i) for i in range(1, 13)]))
+    print((time.time_ns() - start_time))
