@@ -93,7 +93,6 @@ def upload_all_profiles():
         # adds fetched values to the bigger value lists.
         all_profile_values += profile_value
 
-
     print('Compiling complete')
 
     # executes the insert statement for each sql table.
@@ -108,9 +107,9 @@ def upload_all_profiles():
                                   buid_query,
                                   all_buid_values,
                                   page_size=10000)
-    print('Buid table is updated')
+    print('Buids table is updated')
     sql_connection.commit()
-    print('Buid table is committed')
+    print('Buids table is committed')
     sql_c.disconnect(sql_connection, sql_cursor)
 
 
