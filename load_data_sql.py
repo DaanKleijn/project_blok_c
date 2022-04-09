@@ -8,13 +8,13 @@ def profile_id_buid_query():
 
 def product_traffic_month(month):
     """"""
-    sql_query = """SELECT ep.product__id FROM event_products ep, sessions s 
+    return """SELECT ep.product__id FROM event_products ep, sessions s 
     WHERE EXTRACT(MONTH FROM s.session_end) = %s and ep.session__id = s.session__id;"""
 
 
 def products_trending(date):
     """"""
-    sql_query = """SELECT product__id FROM event_products ep, sessions s 
+    return """SELECT product__id FROM event_products ep, sessions s 
     WHERE ep.session__id = s.session__id AND CAST(s.session_end AS DATE) = %s"""
 
 
@@ -28,3 +28,8 @@ def product_price():
     sql = f'SELECT selling_price FROM products WHERE selling_price = (SELECT selling_price FROM products WHERE ' \
           f'product__id = %s) AND product__id != %s;'
     return sql
+
+
+def product_category(category_type='sub_category'):
+    """"""
+    return """SELECT product__id FROM products WHERE {} = %s""".format(category_type)
