@@ -1,5 +1,5 @@
 import PostgreSQL.connect_postgresql_database as sql_c
-import load_data_sql as sql_l
+from PostgreSQL import load_data_sql as sql_l
 import product_traffic_all_time as traffic
 # TODO: account for months where there is more traffic in general. (if a product is bought and looked at 20 % more than
 #  average in a given month, but on average all products were bought and looked at 20 % more in that month, the traffic

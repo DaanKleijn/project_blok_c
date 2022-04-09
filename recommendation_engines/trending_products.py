@@ -1,5 +1,5 @@
 import PostgreSQL.connect_postgresql_database as sql_c
-import product_traffic as traffic
+from recommendation_engines import product_traffic as traffic
 
 
 def products_trending(date):

@@ -1,4 +1,4 @@
-from load_data_sql import product_price, product_gender
+from PostgreSQL.load_data_sql import product_price, product_gender
 import random
 import PostgreSQL.connect_postgresql_database as sql_c
 

@@ -1,11 +1,10 @@
-from flask import Flask, request, session, render_template, redirect, url_for, g
-from flask_restful import Api, Resource, reqparse
+from flask import Flask
+from flask_restful import Api, Resource
 import os
 from pymongo import MongoClient
 from dotenv import load_dotenv
 import content_filtering
 import collaborative_filtering
-import bought_together
 
 app = Flask(__name__)
 api = Api(app)

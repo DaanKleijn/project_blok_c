@@ -4,7 +4,8 @@ import MongoDB.connect_mongodb as mdb_c
 import PostgreSQL.connect_postgresql_database as sql_c
 import transfer_functions as shared
 import time
-import load_data_sql as sql_l
+from PostgreSQL import load_data_sql as sql_l
+
 
 # TODO: save compiled sql insert statement before exiting # TODO: save compiled sql insert statement before exiting code
 # TODO: compile (ddl?) file to work around memory problem and still execute in one go. (or find better solution)
