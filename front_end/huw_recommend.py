@@ -5,6 +5,7 @@ from pymongo import MongoClient
 from dotenv import load_dotenv
 import content_filtering
 import collaborative_filtering
+import bought_together
 
 app = Flask(__name__)
 api = Api(app)

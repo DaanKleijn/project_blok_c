@@ -93,6 +93,7 @@ def upload_all_profiles():
         # adds fetched values to the bigger value lists.
         all_profile_values += profile_value
 
+
     print('Compiling complete')
 
     # executes the insert statement for each sql table.
