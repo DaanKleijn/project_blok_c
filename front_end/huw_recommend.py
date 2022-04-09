@@ -25,12 +25,13 @@ else:
     client = MongoClient()
 database = client.huwebshop
 
+
 class Recom(Resource):
     """ This class represents the REST API that provides the recommendations for
     the webshop. At the moment, the API simply returns a random set of products
     to recommend."""
 
-    def get(self, profileid, count):
+    def get(self, profileid, count, page_type, product_id=None):
         """ This function represents the handler for GET requests coming in
         through the API. It currently returns a random sample of products. """
         product_ids = content_filtering.recommend_products(profileid)
