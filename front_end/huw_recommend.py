@@ -3,8 +3,9 @@ from flask_restful import Api, Resource
 import os
 from pymongo import MongoClient
 from dotenv import load_dotenv
-import content_filtering
-import collaborative_filtering
+import recommendation_engines.bought_together.bought_together as bought_together
+import recommendation_engines.trending_products.trending_products as trending
+import recommendation_engines.popular_months.recommend as date_filtering
 
 app = Flask(__name__)
 api = Api(app)
@@ -34,15 +35,12 @@ class Recom(Resource):
     def get(self, profileid, count, page_type, product_id=None):
         """ This function represents the handler for GET requests coming in
         through the API. It currently returns a random sample of products. """
-        product_ids = content_filtering.recommend_products(profileid)
-        items_remaining = count - len(product_ids)
-        if items_remaining != 0:
-            product_ids += collaborative_filtering.recommend_products_profile(product_ids, amount=items_remaining)
-        items_remaining = count - len(product_ids)
-        if items_remaining != 0:
-            product_ids += collaborative_filtering.recently_bought_products(amount=items_remaining)
-
-        return product_ids, 200
+        if page_type == 'product':
+            return bought_together.recommend(product_id, count), 200
+        if page_type == 'category':
+            return trending.products_trending(count), 200
+        if page_type == 'shoppingcart':
+            return date_filtering.recommend(), 200
 
 # This method binds the Recom class to the REST API, to parse specifically
 # requests in the format described below.
