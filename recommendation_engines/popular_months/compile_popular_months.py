@@ -1,5 +1,7 @@
+import time
+import recommendation_engines.statistics as stats
 import PostgreSQL.connect_postgresql_database as sql_c
-from PostgreSQL import load_data_sql as sql_l
+import PostgreSQL.queries as sql_query
 import product_traffic_all_time as traffic
 # TODO: account for months where there is more traffic in general. (if a product is bought and looked at 20 % more than
 #  average in a given month, but on average all products were bought and looked at 20 % more in that month, the traffic
@@ -15,15 +17,14 @@ ADD popular_month VARCHAR;"""
 
 
 def update_popular_month_query():
-    return """UPDATE products AS p
+    return """UPDATE products
     SET popular_month = %s
     WHERE product__id = %s"""
 
 
-#
 def get_popular_months(traffic_per_month):
     """"""
-    bar = traffic.get_bar_product(traffic_per_month)
+    bar = stats.get_bar_product(sum(traffic_per_month))
     popular_months = ''
 
     for traffic_month in traffic_per_month:
@@ -39,16 +40,24 @@ def get_popular_months(traffic_per_month):
 
 def calculate_popular_months_products(sql_cursor):
     """"""
-    products_query = sql_l.all_product_ids_query()
+    products_query = sql_query.all_product_ids_query()
     sql_cursor.execute(products_query)
     months = [str(i) for i in range(1, 13)]
-    product_popular_month = tuple()
-    for product in [product_id[0] for product_id in sql_cursor.fetchall()]:
-        traffic_per_month = traffic.get_traffic_all_months_all_time(product, months)
-        popular_months = get_popular_months(traffic_per_month)
-        product_popular_month += ((popular_months, product),)
+    product_popular_months = list()
 
-    return product_popular_month
+    products = [str(product[0]) for product in sql_cursor.fetchall()]
+    all_traffic = traffic.get_all_traffic(tuple(products), months)
+    for product in products:
+        product_traffic = list()
+        for month_index in range(12):
+            try:
+                product_traffic.append(all_traffic[str(month_index)][product])
+            except KeyError:
+                product_traffic.append(0)
+        pop_months = get_popular_months(product_traffic)
+        product_popular_months.append((pop_months, product))
+
+    return product_popular_months
 
 
 def initiate_popular_months():
@@ -67,6 +76,7 @@ def initiate_popular_months():
 
 def update_popular_months():
     """"""
+    start_time = time.time_ns()
     sql_connection, sql_cursor = sql_c.connect()
 
     product_popular_months = calculate_popular_months_products(sql_cursor)
@@ -75,7 +85,8 @@ def update_popular_months():
     sql_cursor.executemany(update_pop_month, product_popular_months)
 
     sql_connection.commit()
+    return '{:.4f} secondes'.format((time.time_ns() - start_time) / 1000000000)
 
 
 if __name__ == '__main__':
-    update_popular_months()
+    print(update_popular_months())
