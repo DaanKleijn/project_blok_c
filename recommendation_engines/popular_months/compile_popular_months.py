@@ -1,8 +1,8 @@
 import time
-import recommendation_engines.statistics as stats
 import PostgreSQL.connect_postgresql_database as sql_c
 import PostgreSQL.queries as sql_query
-import product_traffic_all_time as traffic
+import recommendation_engines.product_traffic as traffic
+
 # TODO: account for months where there is more traffic in general. (if a product is bought and looked at 20 % more than
 #  average in a given month, but on average all products were bought and looked at 20 % more in that month, the traffic
 #  for the product should not be considered above average) -> also find a better way to formulate this.
@@ -10,6 +10,7 @@ import product_traffic_all_time as traffic
 
 # update table
 def create_column_popular_months(sql_connection, sql_cursor):
+    """"""
     sql_query = """ALTER TABLE products
 ADD popular_month VARCHAR;"""
     sql_cursor.execute(sql_query)
@@ -17,6 +18,7 @@ ADD popular_month VARCHAR;"""
 
 
 def update_popular_month_query():
+    """"""
     return """UPDATE products
     SET popular_month = %s
     WHERE product__id = %s"""
@@ -24,7 +26,7 @@ def update_popular_month_query():
 
 def get_popular_months(traffic_per_month):
     """"""
-    bar = stats.get_bar_product(sum(traffic_per_month))
+    bar = traffic.get_bar_product(traffic_per_month)
     popular_months = ''
 
     for traffic_month in traffic_per_month:
@@ -46,7 +48,7 @@ def calculate_popular_months_products(sql_cursor):
     product_popular_months = list()
 
     products = [str(product[0]) for product in sql_cursor.fetchall()]
-    all_traffic = traffic.get_all_traffic(tuple(products), months)
+    all_traffic = traffic.get_all_traffic(products, months)
     for product in products:
         product_traffic = list()
         for month_index in range(12):
