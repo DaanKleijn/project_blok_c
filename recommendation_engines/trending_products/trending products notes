@@ -1,0 +1,23 @@
+When a product is sold or looked at more than the baseline, a product will be trending.
+(test with both and with only sold products to test which is best.)
+
+it has to exceed the baseline by a significant margin before being considered. (1.4x + 50) The 'baseline' is the
+modus (could test average also)
+    (--> might have to find a solution to test this, seeing as there are no 50 people visiting the site, much less
+    looking and buying the same product)
+    --> configure: Create a dataset consisting of amount of hits per product per month for a couple of products and
+    see which formula gives a desired result.
+    ---> validate. Retroactively create recommendations for x amount of dates in the past and try to assess if the
+    recommendations are appropriate. Create a fake dataset for one day and assess if that yields appropriate
+    recommendations.
+
+
+a product that is looked at more than the baseline in certain months could be seasonally attractive and would make
+a good candidate as recommendation in those months.
+it has to exceed the baseline by a significant margin before being considered. (1.4x + 50)
+    --> configure: Create a dataset consisting of amount of hits per product per month for a couple of products and
+    see which formula gives a desired result.
+    --> validate this recommendation by reviewing the products recommendations by season. Gauge if the recommendations
+    are appropriate or not. Validate by hand
+    --> !! account for months with more traffic in general.
+
