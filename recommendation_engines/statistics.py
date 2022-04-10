@@ -13,7 +13,10 @@ def get_frequency(a_list):
 
 
 def highest_counts(frequency_dict, amount):
-    """"""
+    """
+    Takes a dictionary with frequencies (dict) ({item: frequency_count}) and an amount (int) as input.
+    Returns the specified amount of items that have the highest frequency counts.
+    """
     product_amount = len(frequency_dict)
     most_frequent_items = list()
 

@@ -3,7 +3,9 @@ from datetime import timedelta
 
 
 def traffic_all_time_query(amount_of_values):
-    """Returns a query to fetch the product_id and the amount of times the product was bought during a given month."""
+    """
+    Returns a query to fetch the product_id and the amount of times the product was bought during a given month.
+    Format order is: month_value, product_ids"""
     # source: https://stackoverflow.com/questions/50334946/executemany-select-queries-with-psycopg2
     return """SELECT COUNT(ep.product__id), p.product__id 
     FROM event_products ep, sessions s, products p
@@ -16,7 +18,8 @@ def traffic_all_time_query(amount_of_values):
 
 
 def traffic_day_query():
-    """Returns all items that were bought with the amount of times it was bought since a given date."""
+    """Returns all items that were bought with the amount of times it was bought since a given date.
+    Format order is: date_value"""
     return """SELECT COUNT(ep.product__id), p.product__id 
     FROM event_products ep, sessions s, products p
     WHERE ep.session__id = s.session__id 
@@ -29,7 +32,7 @@ def traffic_day_query():
 def traffic_year_query(amount_of_values):
     """
     Returns a query to fetch the amount a product is bought and the product_id, ever since a given date, for all given
-    products.
+    products. Format order is: date_value, product_ids
     """
     # source: https://stackoverflow.com/questions/50334946/executemany-select-queries-with-psycopg2
     return """SELECT COUNT(ep.product__id), p.product__id 
@@ -64,7 +67,11 @@ def get_all_traffic(products, months):
 
 
 def get_daily_traffic(date, sql_cursor):
-    """"""
+    """
+    Takes the current date (datetime) and a list of products (list) (str) as input.
+    Returns all products that were bought over the last seven days, together with the amount of times they were bought
+    (dict) {product: count}.
+    """
     # Fetches all hits on products on the given date.
     # A hit means the product has been viewed or bought.
     # A product can receive one hit in one session.
@@ -83,7 +90,7 @@ def get_daily_traffic(date, sql_cursor):
 def get_yearly_traffic(products, sql_cursor, date):
     """
     Takes a list of product_id (str) as input.
-    returns the amount of times that product was looked at or bought in that month (int).
+    Returns the amount of times that product was looked at or bought in that month (int).
     """
     minimum_date = date - timedelta(days=365)
     traffic_query = traffic_year_query(len(products))
@@ -97,7 +104,8 @@ def get_daily_bar(total_traffic):
     """
     Takes a list with 12 count values. Each value represents the amount of hits a given product has ever received in
     a month.
-    Calculates the minimum amount of hits a product has to receive any given month for that month to receive signi
+    Calculates the minimum amount of hits a product has to receive any given week for that traffic to be significantly
+    higher. (140 % + 50)
     """
     average_traffic = total_traffic / 52
     return (average_traffic * 1.4) + 50
@@ -106,8 +114,8 @@ def get_daily_bar(total_traffic):
 def get_bar_product(traffic_per_month):
     """
     Takes a list with 12 count values. Each value represents the amount of hits a given product has ever received in
-    a month.
-    Calculates the minimum amount of hits a product has to receive any given month for that month to receive signi
+    during a month. Calculates the minimum amount of hits a product has to receive any given month for that traffic to
+    be significantly higher. (140 % + 50)
     """
     average_traffic = sum(traffic_per_month) / 12
     return average_traffic * 1.4 + 50

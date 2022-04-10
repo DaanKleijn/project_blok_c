@@ -7,9 +7,8 @@ def products_trending(amount):
     """
     Takes the desired amount of recommendations (int) as input. Calculates which products get significantly more traffic
     than usual.
-    Traffic is measured by the amount of unique orders and is measured over the last week. If the amount of traffic over
-    the last week was more than the (average traffic over the last year * 1.4) + 50, the product will be marked as
-    trending.
+    Traffic is measured by the amount of unique orders and is measured over the last week. The product is trending if
+    the measured traffic is 40 % + 50 higher than the average traffic over the last year.
     Returns the desired amount of trending products (list).
     """
     date = datetime.today()
