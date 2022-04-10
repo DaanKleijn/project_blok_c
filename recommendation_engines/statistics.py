@@ -32,13 +32,3 @@ def highest_counts(frequency_dict, amount):
         amount -= 1
 
     return most_frequent_items
-
-
-def get_bar_product(total_traffic):
-    """
-    Takes a list with 12 count values. Each value represents the amount of hits a given product has ever received in
-    a month.
-    Calculates the minimum amount of hits a product has to receive any given month for that month to receive signi
-    """
-    average_traffic = total_traffic / 12
-    return average_traffic * 1.4 + 50
