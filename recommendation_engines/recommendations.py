@@ -1,8 +1,6 @@
-from PostgreSQL.load_data_sql import product_price, product_gender
+from PostgreSQL.queries import product_price, product_gender
 import random
 import PostgreSQL.connect_postgresql_database as sql_c
-
-selling_price = product_price()
 
 
 def simular_gender(product_id):
@@ -19,7 +17,7 @@ def simular_gender(product_id):
 
 def simular_price(product_id):
     con, cur = sql_c.connect()
-    product_query = product_gender()
+    product_query = product_price()
     cur.execute(product_query, (product_id, product_id))
     similar_products = [product_id[0] for product_id in cur.fetchall()]
     index = random.randint(0, len(similar_products))
