@@ -1,20 +1,6 @@
 import recommendation_engines.statistics as stats
 
 
-def properties_query():
-    """"""
-    return """SELECT product__id, sub_category, category, brand, color, flavor, doelgroep, eenheid, factor, 
-        geschiktvoor, geursoort, huidconditie, huidtype, huidtypegezicht, klacht, kleur, leeftijd, soort, 
-        soorthaarverzorging, soortmondverzorging, sterkte, product_type, typehaarkleuring, typetandenbostel, variant, 
-        waterproof FROM products 
-        WHERE product__id = %s;"""
-
-
-def fetch_category_query(category_type='sub_category'):
-    """"""
-    return """SELECT {} FROM products WHERE product__id = %s""".format(category_type)
-
-
 def difference(product_1_properties, product_2_properties):
     """"""
     difference_count = 0

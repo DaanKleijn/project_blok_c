@@ -1,32 +1,8 @@
 import PostgreSQL.connect_postgresql_database as sql_c
-import PostgreSQL.queries as sql_query
+import PostgreSQL.load.products.load_products as load_products
+import PostgreSQL.insert.similars as insert_similar
 import time
-import psycopg2.extras
 import similar_properties as similar
-
-
-def properties_multiple_query():
-    """"""
-    return """SELECT product__id, sub_category, category, brand, color, flavor, doelgroep, eenheid, factor, 
-    geschiktvoor, geursoort, huidconditie, huidtype, huidtypegezicht, klacht, kleur, leeftijd, soort, 
-    soorthaarverzorging, soortmondverzorging, sterkte, product_type, typehaarkleuring, typetandenbostel, variant, 
-    waterproof FROM products 
-    WHERE product__id IN ({});"""
-
-
-def insert_similar_query():
-    return """INSERT INTO similars
-    VALUES (%s, %s)"""
-
-
-def get_properties(product_ids, sql_cursor):
-    """"""""
-    prop_query = properties_multiple_query().format(','.join(['%s'] * len(product_ids)))
-    sql_cursor.execute(prop_query, product_ids)
-    return [(properties[3:], properties[2], properties[0])
-            if not properties[1]
-            else (properties[3:], properties[1], properties[0])
-            for properties in sql_cursor.fetchall()]
 
 
 def split_sub_categories(big_list):
@@ -38,16 +14,14 @@ def split_sub_categories(big_list):
         except KeyError:
             big_matrix[big_list[i][1]] = dict()
             big_matrix[big_list[i][1]][big_list[i][2]] = big_list[i][0]
-    del big_matrix[None]
 
     return big_matrix
 
 
 def compile_all_similars(sql_cursor, sql_connection, amount=4):
     """"""
-    sql_cursor.execute(sql_query.all_product_ids_query())
-    products = sql_cursor.fetchall()
-    properties = get_properties(products, sql_cursor)
+    products = load_products.all_product_ids(sql_cursor)
+    properties = load_products.get_properties(products, sql_cursor)
     print('fetched unprocessed properties')
     properties_dict = split_sub_categories(properties)
     print('processed properties into a dict')
@@ -60,8 +34,7 @@ def compile_all_similars(sql_cursor, sql_connection, amount=4):
                 similar_values.append((product_id, similar_value))
         print('{} done'.format(category))
     print('calculated all similar products')
-    similar_update_query = insert_similar_query()
-    psycopg2.extras.execute_batch(sql_cursor, similar_update_query, similar_values, page_size=10000)
+    insert_similar.upload_similar(sql_cursor, similar_values)
     sql_connection.commit()
     print('similar products are committed to the sql database')
 
