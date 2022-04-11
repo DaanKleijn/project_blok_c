@@ -223,7 +223,7 @@ class HUWebshop(object):
 
     """ ..:: Recommendation Functions ::.. """
 
-    def recommendations(self, count, product_id, page_type):
+    def recommendations(self, count, page_type, product_id='None'):
         """ This function returns the recommendations from the provided page
         and context, by sending a request to the designated recommendation
         service. At the moment, it only transmits the profile ID and the number
@@ -334,5 +334,6 @@ class HUWebshop(object):
         return '{"success":true, "refurl":"'+request.form.get('refurl')+'"}'
 
     # TODO: add @app.errorhandler(404) and @app.errorhandler(405)
+
 
 huw = HUWebshop(app)
