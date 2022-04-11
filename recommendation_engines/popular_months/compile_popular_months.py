@@ -12,7 +12,7 @@ import recommendation_engines.product_traffic as traffic
 def create_column_popular_months(sql_connection, sql_cursor):
     """Returns a query that adds the column 'popular_month' to the products table."""
     sql_query = """ALTER TABLE products
-ADD popular_month VARCHAR;"""
+    ADD popular_month VARCHAR;"""
     sql_cursor.execute(sql_query)
     sql_connection.commit()
 
@@ -33,7 +33,7 @@ def get_popular_months(traffic_per_month):
     more traffic than other months.
     Returns these months as integers in a formatted string. (e.g. '4, 5'); returns None if no popular months are found.
     """
-    bar = traffic.get_bar_product(traffic_per_month)
+    bar = traffic.get__overall_bar(traffic_per_month)
     popular_months = ''
 
     for traffic_month in traffic_per_month:
@@ -86,7 +86,6 @@ def initiate_popular_months():
     create_column_popular_months(sql_connection, sql_cursor)
 
     product_popular_months = calculate_popular_months_products(sql_cursor)
-
     update_pop_month = update_popular_month_query()
     sql_cursor.execute(update_pop_month, product_popular_months)
 
