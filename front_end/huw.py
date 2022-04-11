@@ -223,13 +223,17 @@ class HUWebshop(object):
 
     """ ..:: Recommendation Functions ::.. """
 
-    def recommendations(self, count, page_type, product_id='None'):
+    def recommendations(self, count, page_type, product_id='unavailable'):
         """ This function returns the recommendations from the provided page
         and context, by sending a request to the designated recommendation
         service. At the moment, it only transmits the profile ID and the number
         of expected recommendations; to have more user information in the REST
         request, this function would have to change."""
-        resp = requests.get(self.recseraddress+"/"+session['profile_id']+"/"+product_id+"/"+page_type+"/"+str(count))
+        print('print statement', page_type, product_id)
+        profileid = session['profile_id']+'.'+page_type+'.'+product_id
+        print(profileid)
+        resp = requests.get(self.recseraddress+"/"+profileid+"/"+str(count))
+        print(resp)
         if resp.status_code == 200:
             recs = eval(resp.content.decode())
             queryfilter = {"_id": {"$in": recs}}
