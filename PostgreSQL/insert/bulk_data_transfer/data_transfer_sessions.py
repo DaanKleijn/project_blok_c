@@ -4,7 +4,7 @@ import MongoDB.connect_mongodb as mdb_c
 import PostgreSQL.connect_postgresql_database as sql_c
 import transfer_functions as shared
 import time
-from PostgreSQL import load_data_sql as sql_l
+import PostgreSQL.load.profiles.queries as sql_queries
 
 
 # TODO: save compiled sql insert statement before exiting # TODO: save compiled sql insert statement before exiting code
@@ -18,9 +18,9 @@ def create_session_query():
     Creates an sql query to insert the following data in the sessions table:
     - session_id
     - profile_id
-    - session end
+    - sessions end
     Returns this query.
-    Products that have been viewed and bought during a single session will only be recorded under 'bought'
+    Products that have been viewed and bought during a single sessions will only be recorded under 'bought'
     """
     return """
     INSERT INTO sessions (session__id, profile__id, session_end) 
@@ -54,9 +54,9 @@ def create_event_products_query():
 def get_session_values(session, profile_id):
     """
     Takes session_data (dict) and profile_id (str) as input.
-    Selects the following data from the session:
+    Selects the following data from the sessions:
     - session_id
-    - session end
+    - sessions end
     Returns these values together with the profile_id (tuple).
     """
     wanted_values = (str(session['_id']),
@@ -82,19 +82,19 @@ def all_values_session(session, profile_id):
         return (list(),) * 2
 
     # creates the lists we are going to fill and return
-    session_values = [get_session_values(session, profile_id)]  # fetches session values
+    session_values = [get_session_values(session, profile_id)]  # fetches sessions values
     event_products = list()
 
     session_id = session_values[0][0]
 
-    # selects order values for every order associated with the session. Adds them to the order value list
+    # selects order values for every order associated with the sessions. Adds them to the order value list
     order = shared.secure_dict_fetch(session, 'order')
     if order:
         for product in order['products']:
             product_id = product['id']
             event_products.append((session_id, product_id, 'ordered'))
 
-    # selects event values for every event associated with the session. Adds them to the event value list
+    # selects event values for every event associated with the sessions. Adds them to the event value list
     for event in events:
         viewed_product_id = shared.secure_dict_fetch(event, 'product')
         if viewed_product_id:
@@ -106,19 +106,19 @@ def all_values_session(session, profile_id):
 # upload
 def upload_session(session):
     """
-    Takes an active sql_cursor and a session (dict) as input.
+    Takes an active sql_cursor and a sessions (dict) as input.
     Creates several sql queries to upload the profile data to the following sql tables:
     - sessions
     - event (viewed or ordered) products (if present)
     Executes the sql queries.
     """
-    # skips the sessions if there are no events linked to the session.
+    # skips the sessions if there are no events linked to the sessions.
     sql_connection, sql_cursor = sql_c.connect()
     # creates queries for tables
     session_query = create_session_query()
     event_products_query = create_event_products_query()
 
-    profile_id_query = sql_l.profile_id_buid_query()
+    profile_id_query = sql_queries.profile_id_buid_query()
     buid = shared.secure_dict_fetch(dict(session), 'buid')
     # doesn't do anything if there is no associated buid.
     if not buid:
@@ -157,7 +157,7 @@ def upload_all_sessions():
 
     # fetches data to put into all tables for all documents and loads this into the cursor
     for session in session_collection.find():
-        profile_id_query = sql_l.profile_id_buid_query()
+        profile_id_query = sql_queries.profile_id_buid_query()
         buid = shared.secure_dict_fetch(dict(session), 'buid')
         # doesn't do anything if there is no associated buid.
         if not buid:
