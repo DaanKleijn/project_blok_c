@@ -3,8 +3,8 @@ from flask_restful import Api, Resource
 import os
 from pymongo import MongoClient
 from dotenv import load_dotenv
-from recommendation_engines.bought_together import bought_together as bought_together
-import recommendation_engines.trending_products.trending_products as trending
+from recommendation_engines.bought_together import recommend as bought_together
+import recommendation_engines.trending_products.recommend as trending
 import recommendation_engines.popular_months.recommend as date_filtering
 
 app = Flask(__name__)
