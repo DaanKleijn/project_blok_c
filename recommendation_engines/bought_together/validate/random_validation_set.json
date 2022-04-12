@@ -1,0 +1,658 @@
+{
+    "27734": {
+        "data": [
+            {
+                "product_id": "27734",
+                "name": "Lactacyd Wasemulsie Gevoelige Huid 300 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Persoonlijke hygiene",
+                "sub_sub_category": "Intiemverzorging",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "27750",
+                "name": "Lactacyd Verfrissende Wasgel 300 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Persoonlijke hygiene",
+                "sub_sub_category": "Intiemverzorging",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "31164",
+                "name": "Demak'Up Expert Ronde Wattenschijfjes 70 St",
+                "category": "Make-up & geuren",
+                "sub_category": "Make-up accessoires",
+                "sub_sub_category": "Wattenschijfjes en wattenstaafjes",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "39934",
+                "name": "Gillette Simply Venus Wegwerpmesjes 6 st",
+                "category": "Gezond & verzorging",
+                "sub_category": "Scheren & ontharen",
+                "sub_sub_category": "Scheermesjes",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "45883",
+                "name": "Fa douchegel Coconut Water 250 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Bad en douche",
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "25343-paars": {
+        "data": [
+            {
+                "product_id": "25343-paars",
+                "name": "Jordan Tandenborstel Step by Step 6-9 jaar Paars",
+                "category": "Gezond & verzorging",
+                "sub_category": "Mondverzorging",
+                "sub_sub_category": "Tandenborstels",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": []
+    },
+    "34520": {
+        "data": [
+            {
+                "product_id": "34520",
+                "name": "Katja Zure Matjes 275 gr",
+                "category": "Eten & drinken",
+                "sub_category": "Snacks en snoep",
+                "sub_sub_category": "Snacks en snoep",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": []
+    },
+    "31871": {
+        "data": [
+            {
+                "product_id": "31871",
+                "name": "Rode Wolf Kleurlenzen Rood 1 Paar",
+                "category": "Wonen & vrije tijd",
+                "sub_category": "Seizoenen",
+                "sub_sub_category": "Carnaval",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": []
+    },
+    "38492-Rood-L": {
+        "data": [
+            {
+                "product_id": "38492-Rood-L",
+                "name": "Australian Boxershorts Donkerrood Maat L 2 st",
+                "category": "Kleding & sieraden",
+                "sub_category": "Heren",
+                "sub_sub_category": "Heren ondergoed",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": []
+    },
+    "47038": {
+        "data": [
+            {
+                "product_id": "47038",
+                "name": "Mr. Muscle 4-in-1 Toiletblok Aqua Blue 2x40gr",
+                "category": "Huishouden",
+                "sub_category": "Toilet en keuken",
+                "sub_sub_category": "Toiletblokken",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "2630",
+                "name": "Page Vochtig Toiletpapier Fresh 42 st",
+                "category": "Huishouden",
+                "sub_category": "Toilet en keuken",
+                "sub_sub_category": "Toiletpapier en vochtige doekjes",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "27091",
+                "name": "At Home Ocean Breeze Luchtverfrisser Gel 150 gr",
+                "category": "Huishouden",
+                "sub_category": "Toilet en keuken",
+                "sub_sub_category": "Luchtverfrissers",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "45869",
+                "name": "Lenor Unstoppables  Fris 275 gr",
+                "category": "Huishouden",
+                "sub_category": "Wassen en schoonmaken",
+                "sub_sub_category": "Wasmiddel",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "47039",
+                "name": "Mr. Muscle 4-in-1 Toiletblok Aqua Green 40 gr",
+                "category": "Huishouden",
+                "sub_category": "Toilet en keuken",
+                "sub_sub_category": "Toiletblokken",
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "22309": {
+        "data": [
+            {
+                "product_id": "22309",
+                "name": "Agfaphoto Alkaline Power Batterijen AA 4 st",
+                "category": "Elektronica & media",
+                "sub_category": "Elektronica & media",
+                "sub_sub_category": "Batterijen",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": []
+    },
+    "25909": {
+        "data": [
+            {
+                "product_id": "25909",
+                "name": "Nivea Men Invisible Black & White Deoroller 50 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Deodorant",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "20006",
+                "name": "Nivea Men 48h Cool Kick Anti-Transpirant 50 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Deodorant",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "25887",
+                "name": "Nivea Deo Roll-On Invisible Black&WhiteClear 50ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Deodorant",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "31654",
+                "name": "Dreft Vaatwastabs AllinOne Platinum 90st",
+                "category": "Huishouden",
+                "sub_category": "Wassen en schoonmaken",
+                "sub_sub_category": "Vaatwastabletten",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "38815",
+                "name": "Page Toiletpapier Zacht & Sterk Voordeelpak 18 Rollen",
+                "category": "Huishouden",
+                "sub_category": "Toilet en keuken",
+                "sub_sub_category": "Toiletpapier en vochtige doekjes",
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "29494": {
+        "data": [
+            {
+                "product_id": "29494",
+                "name": "Venco Schoolkrijt Zacht Zoet 100 gr",
+                "category": "Eten & drinken",
+                "sub_category": "Snacks en snoep",
+                "sub_sub_category": "Snacks en snoep",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "29496",
+                "name": "Venco Mintnopjes 90 g",
+                "category": "Eten & drinken",
+                "sub_category": "Snacks en snoep",
+                "sub_sub_category": "Snacks en snoep",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "29499",
+                "name": "Venco Kleurendrop Hard Zoet 90 gr",
+                "category": "Eten & drinken",
+                "sub_category": "Snacks en snoep",
+                "sub_sub_category": "Snacks en snoep",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "29500",
+                "name": "Red Band Zacht Zoet Dropfruit Duo's 100 gr",
+                "category": "Eten & drinken",
+                "sub_category": "Snacks en snoep",
+                "sub_sub_category": "Snacks en snoep",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "38815",
+                "name": "Page Toiletpapier Zacht & Sterk Voordeelpak 18 Rollen",
+                "category": "Huishouden",
+                "sub_category": "Toilet en keuken",
+                "sub_sub_category": "Toiletpapier en vochtige doekjes",
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "39998": {
+        "data": [
+            {
+                "product_id": "39998",
+                "name": "Paw Patrol Tandpasta 75 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Mondverzorging",
+                "sub_sub_category": "Tandpasta",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "29331",
+                "name": "Prodent 5-12 jr Tandpasta 75 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Mondverzorging",
+                "sub_sub_category": "Tandpasta",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "31231",
+                "name": "Huggies Baby Wipes Natural Care 56 St",
+                "category": "Baby & kind",
+                "sub_category": "Luiers en verschonen",
+                "sub_sub_category": "Babydoekjes",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "36006",
+                "name": "Huggies Babydoekjes Pure 56 st",
+                "category": "Baby & kind",
+                "sub_category": "Luiers en verschonen",
+                "sub_sub_category": "Babydoekjes",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "39999",
+                "name": "Paw Patrol TB 2st",
+                "category": "Gezond & verzorging",
+                "sub_category": "Mondverzorging",
+                "sub_sub_category": "Tandenborstels",
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "9579": {
+        "data": [
+            {
+                "product_id": "9579",
+                "name": "Schwarzkopf Haarspray Silhouette Super Hold 500ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Kappersproducten",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "27918",
+                "name": "Handdoek Antraciet 100 x 50 cm",
+                "category": "Huishouden",
+                "sub_category": "Overig huishoudelijk",
+                "sub_sub_category": "Huishoudelijk textiel",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "39700",
+                "name": "Schwarzkopf Silhouette Haarspray Super Hold 300ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Kappersproducten",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "44866",
+                "name": "Schwarzkopf Silhouette Haarspray Color Brilliance 750 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Kappersproducten",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "44867",
+                "name": "Schwarzkopf Silhouette Haarspray Super Hold 750 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Kappersproducten",
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "43280": {
+        "data": [
+            {
+                "product_id": "43280",
+                "name": "Australian Boxershort Zwart & Groen Maat XL 2 st",
+                "category": "Kleding & sieraden",
+                "sub_category": "Heren",
+                "sub_sub_category": "Heren ondergoed",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "1475",
+                "name": "Gillette Fusion Scheermesjes 4 st",
+                "category": "Gezond & verzorging",
+                "sub_category": "Scheren & ontharen",
+                "sub_sub_category": "Scheermesjes",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "16767",
+                "name": "Elvive Color-Vive Beschermende Shampoo 250 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Shampoo",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "16946",
+                "name": "Dove Deodorant Spray Beauty Finish 150 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Deodorant",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "2630",
+                "name": "Page Vochtig Toiletpapier Fresh 42 st",
+                "category": "Huishouden",
+                "sub_category": "Toilet en keuken",
+                "sub_sub_category": "Toiletpapier en vochtige doekjes",
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "33929-Blauwenzwart-S": {
+        "data": [
+            {
+                "product_id": "33929-Blauwenzwart-S",
+                "name": "Bon Giorno Heren Boxers Maat S 2 st",
+                "category": "Kleding & sieraden",
+                "sub_category": "Heren",
+                "sub_sub_category": "Heren ondergoed",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "33857-MaatL",
+                "name": "Bon Giorno Boxershort Maat L Picasso + Zwart",
+                "category": "Wonen & vrije tijd",
+                "sub_category": "Seizoenen",
+                "sub_sub_category": null,
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "33890-MaatL",
+                "name": "Bon Giorno Boxershort Maat L Picasso + Blauw",
+                "category": "Wonen & vrije tijd",
+                "sub_category": "Seizoenen",
+                "sub_sub_category": null,
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "33929-Grijsenzwart-S",
+                "name": "Bon Giorno Heren Boxers Maat S 2 st",
+                "category": "Kleding & sieraden",
+                "sub_category": "Heren",
+                "sub_sub_category": "Heren ondergoed",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "38941-groen-l",
+                "name": "Bon Giorno Herenboxers Groen/Zwart Maat L",
+                "category": "Wonen & vrije tijd",
+                "sub_category": "Seizoenen",
+                "sub_sub_category": null,
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "9425": {
+        "data": [
+            {
+                "product_id": "9425",
+                "name": "Byphasse Make-Up Remover Doekjes Alle Huidtypen 25 stuks",
+                "category": "Make-up & geuren",
+                "sub_category": "Make-up accessoires",
+                "sub_sub_category": "Make-up remover & reiniging",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": []
+    },
+    "34006": {
+        "data": [
+            {
+                "product_id": "34006",
+                "name": "Bon Giorno Slippers Mixds 20st Fem Anker",
+                "category": "Wonen & vrije tijd",
+                "sub_category": "Seizoenen",
+                "sub_sub_category": "Vakantie",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": []
+    },
+    "39135": {
+        "data": [
+            {
+                "product_id": "39135",
+                "name": "Pro Garden Solarlamp Wit 38 cm",
+                "category": "Wonen & vrije tijd",
+                "sub_category": "Tuinartikelen",
+                "sub_sub_category": "Tuinartikelen",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": []
+    },
+    "9635": {
+        "data": [
+            {
+                "product_id": "9635",
+                "name": "Sensodyne Cool Gel Tandpasta 75 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Mondverzorging",
+                "sub_sub_category": "Tandpasta",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "2153",
+                "name": "Andr\u00e9lon Shampoo Care & Repair 300 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Shampoo",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "2171",
+                "name": "Sanex Dermo Extra Control Deodorant Roller 50 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Deodorant",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "22227",
+                "name": "Dove Men+Care Body & Face Shower Gel Fresh Awake 250 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Bad en douche",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "23497",
+                "name": "Nivea Creme Coconut Shower Cream 250 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Bad en douche",
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "1629": {
+        "data": [
+            {
+                "product_id": "1629",
+                "name": "Proset Hairspray Style & Care Strong 300 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Haarstyling",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "1626",
+                "name": "Proset Hairspray Style & Care Mega Strong 300 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Haarstyling",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "1627",
+                "name": "Proset Style & Care Haarspray Extra Sterk 300 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Haarstyling",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "1628",
+                "name": "ProSet Ultra Strong Style & Care Hairspray 300 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Haarstyling",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "27384",
+                "name": "Gliss Kur Hair Repair Ultimate Oil Elixir Conditioner 200 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Conditioner",
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "26235": {
+        "data": [
+            {
+                "product_id": "26235",
+                "name": "Nivea Hydro Care Conditioner 200 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Conditioner",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "2401",
+                "name": "Nivea Repair & Targeted Care Conditioner 200 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Conditioner",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "26234",
+                "name": "Nivea Volume Care Verzorgende Conditioner Bamboe Extract 200 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Conditioner",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "3846",
+                "name": "Dove Deodorant Spray Original 150 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Deodorant",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "9395",
+                "name": "Nivea Verzorgende Shampoo Classic Care 250 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Shampoo",
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "8510": {
+        "data": [
+            {
+                "product_id": "8510",
+                "name": "Junior Styling Gellac Super Strong Hold 150 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Haarstyling",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "20821",
+                "name": "Aquafresh Mondwater Fresh Mint 500 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Mondverzorging",
+                "sub_sub_category": "Mondwater & spray",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "21691",
+                "name": "Nivea Styling Spray Diamond Gloss 250 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Haarstyling",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "32583",
+                "name": "8x4 Deodorant Spray Pure 150 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Deodorant",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "8513",
+                "name": "Junior Hairspray Extra Strong 300 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Haarstyling",
+                "sub_sub_sub_category": null
+            }
+        ]
+    }
+}
