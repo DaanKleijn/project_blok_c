@@ -10,9 +10,8 @@ def connect():
         connection = psycopg2.connect(host='localhost',
                                       database='huwebshop',
                                       user='postgres',
-                                      password='postgres',
-                                      port=5432
-                                      )
+                                      password='password',
+                                      port=5432)
 
         # creates cursor
         cursor = connection.cursor()
