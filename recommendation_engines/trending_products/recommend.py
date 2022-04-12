@@ -40,7 +40,39 @@ def products_trending(amount, sql_cursor):
     return trending
 
 
+def products_trending_date(amount, sql_cursor, date):
+    """
+    Takes the desired amount of recommendations (int) as input. Calculates which products get significantly more traffic
+    than usual.
+    Traffic is measured by the amount of unique orders and is measured over the last week. The product is trending if
+    the measured traffic is 40 % + 50 higher than the average traffic over the last year.
+    Returns the desired amount of trending products (list).
+    """
+    trending = list()
+    frequency_products = traffic.get_daily_traffic(date, sql_cursor)
+    # Cycles through all products with their hit_count
+    total_traffic = traffic.get_yearly_traffic(list(frequency_products.keys()), date, sql_cursor)
+
+    for total_hit_count, product in total_traffic:
+        product_bar = get_daily_bar(total_hit_count)
+        # If the amount of hits * 30 (so we can compare it to data over a month instead of over a day) is greater than
+        # (average hits per month * 1.4 + 50), the product is trending.
+        if frequency_products[product] >= product_bar:
+            trending.append(product)
+    if len(trending) >= amount:
+        return trending[:amount]
+
+    return trending
+
+
+def recommending(amount):
+    """"""
+    sql_connection, sql_cursor = sql_c.connect()
+    trending_prods = products_trending(amount, sql_cursor)
+    sql_c.disconnect(sql_connection, sql_cursor)
+    return trending_prods
+
+
 if __name__ == '__main__':
-    con, cur = sql_c.connect()
-    print(products_trending(4, cur))
-    sql_c.disconnect(con, cur)
+    print(recommending(4))
+
