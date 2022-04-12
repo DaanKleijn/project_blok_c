@@ -1,0 +1,186 @@
+{
+    "16862": {
+        "data": [
+            {
+                "product_id": "16862",
+                "name": "Pampers Sensitive Babydoekjes 12 st",
+                "category": "Baby & kind",
+                "sub_category": "Luiers en verschonen",
+                "sub_sub_category": "Babydoekjes",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "20561",
+                "name": "Robijn Vloeibaar Wasmiddel Color 4757 ml",
+                "category": "Huishouden",
+                "sub_category": "Wassen en schoonmaken",
+                "sub_sub_category": "Wasmiddel",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "31695",
+                "name": "Oppie Knuffel",
+                "category": "Baby & kind",
+                "sub_category": "Speelgoed",
+                "sub_sub_category": "Speelgoed",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "32484",
+                "name": "Pampers Baby-Dry Luiers Maat 5 | 11-16 kg | 23 st",
+                "category": "Baby & kind",
+                "sub_category": "Luiers en verschonen",
+                "sub_sub_category": "Luiers",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "38815",
+                "name": "Page Toiletpapier Zacht & Sterk Voordeelpak 18 Rollen",
+                "category": "Huishouden",
+                "sub_category": "Toilet en keuken",
+                "sub_sub_category": "Toiletpapier en vochtige doekjes",
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "45108": {
+        "data": [
+            {
+                "product_id": "45108",
+                "name": "Nokia 105 Wit 4 MB",
+                "category": "Elektronica & media",
+                "sub_category": "Elektronica & media",
+                "sub_sub_category": "Telefonie",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "45107",
+                "name": "Nokia 105 Zwart 4  MB",
+                "category": "Elektronica & media",
+                "sub_category": "Elektronica & media",
+                "sub_sub_category": "Telefonie",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "45112",
+                "name": "Alcatel OneTouch 10.16 Black 4 MB",
+                "category": "Elektronica & media",
+                "sub_category": "Elektronica & media",
+                "sub_sub_category": "Telefonie",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "45113",
+                "name": "Alcatel OneTouch 10.16D Wit 4 MB",
+                "category": "Elektronica & media",
+                "sub_category": "Elektronica & media",
+                "sub_sub_category": "Telefonie",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "46462",
+                "name": "Alcatel 10.66D Zwart Dual Sim i.c.m. Lebara SIM",
+                "category": "Elektronica & media",
+                "sub_category": "Elektronica & media",
+                "sub_sub_category": "Telefonie",
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "23866": {
+        "data": [
+            {
+                "product_id": "23866",
+                "name": "Neutral Wasmiddel Vloeibaar Wit Parfumvrije 1425 ml",
+                "category": "Huishouden",
+                "sub_category": "Wassen en schoonmaken",
+                "sub_sub_category": "Wasmiddel",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "16868",
+                "name": "Pampers Babydoekjes Sensitive 56 st",
+                "category": "Baby & kind",
+                "sub_category": "Luiers en verschonen",
+                "sub_sub_category": "Babydoekjes",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "25114",
+                "name": "Zwitsal Billendoekjes Lotion 12x72 st",
+                "category": "Baby & kind",
+                "sub_category": "Luiers en verschonen",
+                "sub_sub_category": "Babydoekjes",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "42678",
+                "name": "Mullrose Ruitensproeiervloeistof Winter 5L",
+                "category": "Wonen & vrije tijd",
+                "sub_category": "Outdoor en vrije tijd",
+                "sub_sub_category": "Outdoor en vrije tijd",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "48471",
+                "name": "Neutral Vloeibaar Wasmiddel Kleur 35 Wasbeurten 2625 ml",
+                "category": "Huishouden",
+                "sub_category": "Wassen en schoonmaken",
+                "sub_sub_category": "Wasmiddel",
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "7691": {
+        "data": [
+            {
+                "product_id": "7691",
+                "name": "Head & Shoulders Shampoo Colour 300 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Shampoo",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "24858",
+                "name": "Head & Shoulders Shampoo Smooth en Silky 200 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Shampoo",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "29038",
+                "name": "Head & Shoulders 2in1 Classic 255 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Shampoo",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "29136",
+                "name": "Head & Shoulders Citrus Fresh 2in1 255 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Shampoo",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "44230",
+                "name": "Head and Shoulders Moisturizing Scalp Care 200 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Shampoo",
+                "sub_sub_sub_category": null
+            }
+        ]
+    }
+}

@@ -1,0 +1,186 @@
+{
+    "16862": {
+        "data": [
+            {
+                "product_id": "16862",
+                "name": "Pampers Sensitive Babydoekjes 12 st",
+                "category": "Baby & kind",
+                "sub_category": "Luiers en verschonen",
+                "sub_sub_category": "Babydoekjes",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "17200",
+                "name": "Pampers Active Baby Luiers Maat 3 | 4-9 kg | 22 st",
+                "category": "Baby & kind",
+                "sub_category": "Luiers en verschonen",
+                "sub_sub_category": "Luiers",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "30928",
+                "name": "Pampers Fresh Clean Babydoekjes 64 st",
+                "category": "Baby & kind",
+                "sub_category": "Luiers en verschonen",
+                "sub_sub_category": "Babydoekjes",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "30928-bundel-12-st",
+                "name": "Pampers Fresh Clean Babydoekjes 12 st",
+                "category": "Baby & kind",
+                "sub_category": "Luiers en verschonen",
+                "sub_sub_category": "Babydoekjes",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "41932",
+                "name": "Pampers Fresh Clean Babydoekjes 12 st",
+                "category": "Baby & kind",
+                "sub_category": "Luiers en verschonen",
+                "sub_sub_category": "Babydoekjes",
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "45108": {
+        "data": [
+            {
+                "product_id": "45108",
+                "name": "Nokia 105 Wit 4 MB",
+                "category": "Elektronica & media",
+                "sub_category": "Elektronica & media",
+                "sub_sub_category": "Telefonie",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "45103",
+                "name": "Nokia 2 Zwart 8 GB",
+                "category": "Elektronica & media",
+                "sub_category": "Elektronica & media",
+                "sub_sub_category": "Telefonie",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "45105",
+                "name": "Nokia 3310 3G Grijs 64 MB",
+                "category": "Elektronica & media",
+                "sub_category": "Elektronica & media",
+                "sub_sub_category": "Telefonie",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "45106",
+                "name": "Nokia 130 Grijs 8 MB",
+                "category": "Elektronica & media",
+                "sub_category": "Elektronica & media",
+                "sub_sub_category": "Telefonie",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "45107",
+                "name": "Nokia 105 Zwart 4  MB",
+                "category": "Elektronica & media",
+                "sub_category": "Elektronica & media",
+                "sub_sub_category": "Telefonie",
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "23866": {
+        "data": [
+            {
+                "product_id": "23866",
+                "name": "Neutral Wasmiddel Vloeibaar Wit Parfumvrije 1425 ml",
+                "category": "Huishouden",
+                "sub_category": "Wassen en schoonmaken",
+                "sub_sub_category": "Wasmiddel",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "1714",
+                "name": "Neutral Vloeibaar Kleur Parfumvrij Wasmiddel 1425 ml",
+                "category": "Huishouden",
+                "sub_category": "Wassen en schoonmaken",
+                "sub_sub_category": "Wasmiddel",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "1977",
+                "name": "Neutral Afwasmiddel 500 ml",
+                "category": "Huishouden",
+                "sub_category": "Wassen en schoonmaken",
+                "sub_sub_category": "Afwasmiddel",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "20339",
+                "name": "Neutral Wasmiddel Vloeibaar Zwart & Donker Parfumvrij 1000 ml",
+                "category": "Huishouden",
+                "sub_category": "Wassen en schoonmaken",
+                "sub_sub_category": "Wasmiddel",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "20559",
+                "name": "Neutral Wasmiddel Vloeibaar 3000 ml",
+                "category": "Huishouden",
+                "sub_category": "Wassen en schoonmaken",
+                "sub_sub_category": "Wasmiddel",
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "7691": {
+        "data": [
+            {
+                "product_id": "7691",
+                "name": "Head & Shoulders Shampoo Colour 300 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Shampoo",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "16761",
+                "name": "Elvive Intens Glad Shampoo 250 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Shampoo",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "33856",
+                "name": "Andr\u00e9lon Levendige Kleur Perzik-Extract Shampoo XL 450 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Shampoo",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "39841",
+                "name": "Garnier Shampoo Ultra Dolce Lavandel 250ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Shampoo",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "9945",
+                "name": "Fructis Shampoo Color Last 250 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Shampoo",
+                "sub_sub_sub_category": null
+            }
+        ]
+    }
+}
