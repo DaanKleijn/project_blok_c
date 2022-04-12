@@ -1,15 +1,22 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Web-shop Recommendation Engine
+This project is dedicated to designing a recommendation engine for the op=op voordeelshop web-shop. We have developed
+several engines and validated them against each other in order to find the best recommendation engine for this use case. 
+We have also written an advice-rapport about this project, the concept version can be found under 
+Adviesrapport_Recommendatie_Engine versie 2.docx.
+Written by Kasper Sikkema, Daan Kleijn and Susan Bruggeling.
 
 # Getting Started
 TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+1. Installation process
+2. Software dependencies
+3. Latest releases
+
+4. API references
 
 # Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+The dataset used with this project is not publicly available. If you do not have it, you cannot use this project.
+
+
 
 # Contribute
 TODO: Explain how other users and developers can contribute to make your code better. 
