@@ -1,9 +1,9 @@
 import PostgreSQL.connect_postgresql_database as sql_c
-import Validation.sample_support as sample_support
 import Validation.data_conversion as convert_data
-import recommend as popular_months
+import recommendation_engines.popular_months.recommend as popular_months
 
-json_validation_file = 'validation_set.json'
+random_validation_file = 'complete_validation_set.json'
+mandatory_validation_file = 'mandatory_validation_set.json'
 
 
 def get_samples(sql_cursor):
@@ -17,10 +17,14 @@ def get_samples(sql_cursor):
     return result
 
 
-if __name__ == '__main__':
-    con, cur = sql_c.connect()
-    validation_products = get_samples(cur)
+def take_samples():
+    sql_connection, sql_cursor = sql_c.connect()
+    validation_products = get_samples(sql_cursor)
     convert_data.samples_other_dict(products=validation_products,
-                                      sql_cursor=cur,
-                                      json_file=json_validation_file)
-    sql_c.disconnect(con, cur)
+                                    sql_cursor=sql_cursor,
+                                    json_file=random_validation_file)
+    sql_c.disconnect(sql_connection, sql_cursor)
+
+
+if __name__ == '__main__':
+    take_samples()
