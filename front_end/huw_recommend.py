@@ -6,7 +6,6 @@ from dotenv import load_dotenv
 from recommendation_engines.bought_together import recommend as bought_together
 import recommendation_engines.trending_products.recommend as trending
 import recommendation_engines.popular_months.recommend as date_filtering
-import PostgreSQL.connect_postgresql_database as sql_c
 
 app = Flask(__name__)
 api = Api(app)
