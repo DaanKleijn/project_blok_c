@@ -13,6 +13,17 @@ def product_ids_in_categories():
     return """SELECT product__id FROM products WHERE category IS NOT NULL"""
 
 
+# events
+def event_product_query():
+    """"""
+    return """SELECT ep.product__id FROM event_products ep, sessions s, products p 
+    WHERE ep.session__id = s.session__id 
+    AND ep.product__id = p.product__id
+    AND s.session__id in (SELECT session__id FROM event_products WHERE product__id = %s)
+    AND ep.event_type = %s
+    AND ep.product__id != %s;"""
+
+
 # popular months
 def product_pop_month_query():
     """Returns a query that fetches all product_ids of products that are more popular in a given month."""

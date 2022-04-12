@@ -1,5 +1,4 @@
 import PostgreSQL.load.products.queries as product_queries
-import PostgreSQL.load.sessions.queries as session_queries
 
 
 def all_product_ids(sql_cursor):
@@ -14,7 +13,7 @@ def ordered_together_with(product, sql_cursor):
     Takes a product_id as input. Fetches the product_id of all products ordered together with the input product.
     Returns all fetched products (list) [str].
     """
-    products_query = session_queries.event_product_query()
+    products_query = product_queries.event_product_query()
     sql_cursor.execute(products_query, (product, 'ordered', product))
     return [ordered_product[0] for ordered_product in sql_cursor.fetchall()]
 
