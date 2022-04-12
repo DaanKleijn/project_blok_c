@@ -9,9 +9,11 @@ json_validation_file = 'validation_set.json'
 def get_samples(sql_cursor):
     months = [str(month) for month in range(1, 13)]
     result = {}
+    print(months)
     for month in months:
-        result[month] = popular_months.recommended_products(product_amount=50,
-                                                            sql_cursor=sql_cursor)
+        result[month] = popular_months.recommended_products_month(month=month,
+                                                                  product_amount=500,
+                                                                  sql_cursor=sql_cursor)
     return result
 
 

@@ -1,0 +1,922 @@
+{
+    "20414": {
+        "data": [
+            {
+                "product_id": "20414",
+                "name": "Axe Dry Deodorant Roller Anarchy 50 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Deodorant",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "1242",
+                "name": "Axe Dry Deodorant Roller Dark Temptation 50 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Deodorant",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "1405",
+                "name": "Axe Dry Instinct Deodorant Roll-On 50 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Deodorant",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "29388",
+                "name": "Axe Dry Deodorant Roller Peace 50 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Deodorant",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "32310",
+                "name": "Axe Dry Deodorant Roller Click 50 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Deodorant",
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "32846": {
+        "data": [
+            {
+                "product_id": "32846",
+                "name": "Aquafresh Flex Protect Tandenborstel Hard",
+                "category": "Gezond & verzorging",
+                "sub_category": "Mondverzorging",
+                "sub_sub_category": "Tandenborstels",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "27201",
+                "name": "Aquafresh Tandenborstel High Definition White Medium",
+                "category": "Gezond & verzorging",
+                "sub_category": "Mondverzorging",
+                "sub_sub_category": "Tandenborstels",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "31852",
+                "name": "Aquafresh Triple Protection Tandenborstel Medium",
+                "category": "Gezond & verzorging",
+                "sub_category": "Mondverzorging",
+                "sub_sub_category": "Tandenborstels",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "31857",
+                "name": "Aquafresh Flex Protect Tandenborstel Medium",
+                "category": "Gezond & verzorging",
+                "sub_category": "Mondverzorging",
+                "sub_sub_category": "Tandenborstels",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "32845",
+                "name": "Aquafresh Inter Espaces Flex Tandenborstel Medium",
+                "category": "Gezond & verzorging",
+                "sub_category": "Mondverzorging",
+                "sub_sub_category": "Tandenborstels",
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "9285": {
+        "data": [
+            {
+                "product_id": "9285",
+                "name": "Fa Douche Cream & Olie Magnolia Met Amandelolie 250 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Bad en douche",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "17116",
+                "name": "Fa Cream & Oil Silk & Magnolia Cream Bath 500 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Bad en douche",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "23181",
+                "name": "Fa Fantasy Moments Douchegel Diamonds & Jade Blossom 250 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Bad en douche",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "26429",
+                "name": "Fa Yoghurt Douchecreme Aloe Vera 500 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Bad en douche",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "31847",
+                "name": "Fa Magic Oil Pink Jasmine Shower Gel 250 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Bad en douche",
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "34713-donkergrijs-m": {
+        "data": [
+            {
+                "product_id": "34713-donkergrijs-m",
+                "name": "Bon Giorno Donkergrijze Joggingbroek M",
+                "category": "Kleding & sieraden",
+                "sub_category": "Dames",
+                "sub_sub_category": "Dames kleding",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "34713-donkergrijs-l",
+                "name": "Bon Giorno Donkergrijze Joggingbroek L",
+                "category": "Kleding & sieraden",
+                "sub_category": "Dames",
+                "sub_sub_category": "Dames kleding",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "34713-donkergrijs-s",
+                "name": "Bon Giorno Donkergrijze Joggingbroek S",
+                "category": "Kleding & sieraden",
+                "sub_category": "Dames",
+                "sub_sub_category": "Dames kleding",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "34713-donkergrijs-xl",
+                "name": "Bon Giorno Donkergrijze Joggingbroek XL",
+                "category": "Kleding & sieraden",
+                "sub_category": "Dames",
+                "sub_sub_category": "Dames kleding",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "34713-donkergrijs-xxl",
+                "name": "Bon Giorno Donkergrijze Joggingbroek XXL",
+                "category": "Kleding & sieraden",
+                "sub_category": "Dames",
+                "sub_sub_category": "Dames kleding",
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "46543": {
+        "data": [
+            {
+                "product_id": "46543",
+                "name": "Axe Cadeauverpakking Dark Temptation",
+                "category": "Make-up & geuren",
+                "sub_category": "Geuren en geschenkset",
+                "sub_sub_category": "Geschenksets",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "21140",
+                "name": "Axe Cadeauverpakking Provocation",
+                "category": "Make-up & geuren",
+                "sub_category": "Geuren en geschenkset",
+                "sub_sub_category": "Geschenksets",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "21183",
+                "name": "Axe Cadeauverpakking Alaska",
+                "category": "Make-up & geuren",
+                "sub_category": "Geuren en geschenkset",
+                "sub_sub_category": "Geschenksets",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "33024",
+                "name": "Axe Cadeauverpakking Black",
+                "category": "Make-up & geuren",
+                "sub_category": "Geuren en geschenkset",
+                "sub_sub_category": "Geschenksets",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "33137",
+                "name": "Axe Cadeauverpakking Peace",
+                "category": "Make-up & geuren",
+                "sub_category": "Geuren en geschenkset",
+                "sub_sub_category": "Geschenksets",
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "43535": {
+        "data": [
+            {
+                "product_id": "43535",
+                "name": "Mickey Mouse Jumbo Muurklok 47cm",
+                "category": "Wonen & vrije tijd",
+                "sub_category": "Woonaccessoires",
+                "sub_sub_category": "Woonaccessoires",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "35370",
+                "name": "Smiley Kussen",
+                "category": "Wonen & vrije tijd",
+                "sub_category": "Woonaccessoires",
+                "sub_sub_category": "Woonaccessoires",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "43536",
+                "name": "Spiderman Jumbo Muurklok 47cm",
+                "category": "Wonen & vrije tijd",
+                "sub_category": "Woonaccessoires",
+                "sub_sub_category": "Woonaccessoires",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "43537",
+                "name": "Star Wars Jumbo Muurklok 47cm",
+                "category": "Wonen & vrije tijd",
+                "sub_category": "Woonaccessoires",
+                "sub_sub_category": "Woonaccessoires",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "43538",
+                "name": "Avengers Jumbo Muurklok 47cm",
+                "category": "Wonen & vrije tijd",
+                "sub_category": "Woonaccessoires",
+                "sub_sub_category": "Woonaccessoires",
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "42651": {
+        "data": [
+            {
+                "product_id": "42651",
+                "name": "Mexx Bodylotion Magnetic 150 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Bodylotion en bodymilk",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "22230",
+                "name": "Beckham Bodylotion Signature 200ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Bodylotion en bodymilk",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "25498",
+                "name": "Dove Bodylotion Summer Glow 250 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Bodylotion en bodymilk",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "26001",
+                "name": "Dove Go Fresh Bodylotion Pomegranate 250 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Bodylotion en bodymilk",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "28485",
+                "name": "Montagne Jeunesse Body Smoothie Acai Berry 20 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Bodylotion en bodymilk",
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "45176": {
+        "data": [
+            {
+                "product_id": "45176",
+                "name": "iPhone 5 Zwart 32 GB",
+                "category": "Elektronica & media",
+                "sub_category": "Elektronica & media",
+                "sub_sub_category": "Telefonie",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "45174",
+                "name": "iPhone 5 Zwart 16 GB",
+                "category": "Elektronica & media",
+                "sub_category": "Elektronica & media",
+                "sub_sub_category": "Telefonie",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "45175",
+                "name": "iPhone 5 Wit 16 GB",
+                "category": "Elektronica & media",
+                "sub_category": "Elektronica & media",
+                "sub_sub_category": "Telefonie",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "45179",
+                "name": "iPhone 5C Geel 16 GB",
+                "category": "Elektronica & media",
+                "sub_category": "Elektronica & media",
+                "sub_sub_category": "Telefonie",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "45185",
+                "name": "iPhone 6S Grijs 16 GB",
+                "category": "Elektronica & media",
+                "sub_category": "Elektronica & media",
+                "sub_sub_category": "Telefonie",
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "45028": {
+        "data": [
+            {
+                "product_id": "45028",
+                "name": "Wella Koleston Perfect Haarverf 9-0 60 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Kappersproducten",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "45009",
+                "name": "Wella Koleston Perfect Haarverf 12-0 60 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Kappersproducten",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "45010",
+                "name": "Wella Koleston Perfect Haarverf 8 60 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Kappersproducten",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "45011",
+                "name": "Wella Koleston Perfect Haarverf 4 60 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Kappersproducten",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "45043",
+                "name": "Wella Koleston Perfect Haarverf 9-96 60 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Kappersproducten",
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "38374": {
+        "data": [
+            {
+                "product_id": "38374",
+                "name": "Nivea Men Deodorant Dry Impact 100 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Deodorant",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "17185",
+                "name": "Nivea Men 48h Dry Impact Plus Anti-Transpirant 50 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Deodorant",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "36598",
+                "name": "Nivea Men Deodorant Invisible Black & White 100 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Deodorant",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "38373",
+                "name": "Nivea Men Deodorant Cool Kick 100 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Deodorant",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "39328",
+                "name": "Nivea Men Deospray Protect & Care 150 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Deodorant",
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "42918": {
+        "data": [
+            {
+                "product_id": "42918",
+                "name": "Nickelodeon Paw Patrol Rugzak Skye",
+                "category": "Baby & kind",
+                "sub_category": "Speelgoed",
+                "sub_sub_category": "Speelgoed",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "33101",
+                "name": "Disney Kleurplaten Mixdoos 4srt 12st",
+                "category": "Baby & kind",
+                "sub_category": "Speelgoed",
+                "sub_sub_category": "Speelgoed",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "38526",
+                "name": "Trolls Kleurset 4 st",
+                "category": "Baby & kind",
+                "sub_category": "Speelgoed",
+                "sub_sub_category": "Speelgoed",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "38526-verf",
+                "name": "Dreamworks Trolls Kleurset Verf",
+                "category": "Baby & kind",
+                "sub_category": "Speelgoed",
+                "sub_sub_category": "Speelgoed",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "41950",
+                "name": "Angry Birds Kleurset",
+                "category": "Baby & kind",
+                "sub_category": "Speelgoed",
+                "sub_sub_category": "Speelgoed",
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "44222": {
+        "data": [
+            {
+                "product_id": "44222",
+                "name": "Star Bright Microvezel Glasdoek 2st 35x40cm",
+                "category": "Huishouden",
+                "sub_category": "Wassen en schoonmaken",
+                "sub_sub_category": "Schoonmaken",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "29570",
+                "name": "Swiffer Duster XXL Kit & Steel + 2 Doekjes",
+                "category": "Huishouden",
+                "sub_category": "Wassen en schoonmaken",
+                "sub_sub_category": "Schoonmaken",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "30493",
+                "name": "Glorix Schoonmaakdoekjes Original 30 Stuks",
+                "category": "Huishouden",
+                "sub_category": "Wassen en schoonmaken",
+                "sub_sub_category": "Schoonmaken",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "30847",
+                "name": "Dubro Multi Ontvetter Doekjes 60 Stuks",
+                "category": "Huishouden",
+                "sub_category": "Wassen en schoonmaken",
+                "sub_sub_category": "Schoonmaken",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "44221",
+                "name": "Star Bright Stofwisdoekjes Vloer 50 st 42x25cm",
+                "category": "Huishouden",
+                "sub_category": "Wassen en schoonmaken",
+                "sub_sub_category": "Schoonmaken",
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "35198": {
+        "data": [
+            {
+                "product_id": "35198",
+                "name": "Cosmo Women Eau De Toilette Somebody 100 ml",
+                "category": "Make-up & geuren",
+                "sub_category": "Geuren en geschenkset",
+                "sub_sub_category": "Damesgeuren",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "16926",
+                "name": "Laura Biagiotti Roma EDT 100 ml",
+                "category": "Make-up & geuren",
+                "sub_category": "Geuren en geschenkset",
+                "sub_sub_category": "Damesgeuren",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "27213",
+                "name": "Burberry Body Woman Eau De Toilette 35 ml",
+                "category": "Make-up & geuren",
+                "sub_category": "Geuren en geschenkset",
+                "sub_sub_category": "Damesgeuren",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "32738",
+                "name": "Shirley May Eau De Toilette Black Diamond 100 ml",
+                "category": "Make-up & geuren",
+                "sub_category": "Geuren en geschenkset",
+                "sub_sub_category": "Damesgeuren",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "35217",
+                "name": "Cosmo Eau De Toilette One 100 ml",
+                "category": "Make-up & geuren",
+                "sub_category": "Geuren en geschenkset",
+                "sub_sub_category": "Damesgeuren",
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "40431": {
+        "data": [
+            {
+                "product_id": "40431",
+                "name": "Oral-B Tandpasta 2in1 Complete + Mondspoeling",
+                "category": "Gezond & verzorging",
+                "sub_category": "Mondverzorging",
+                "sub_sub_category": "Tandpasta",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "20089",
+                "name": "Oral-B Opzetborstels Precision Clean 6 st",
+                "category": "Gezond & verzorging",
+                "sub_category": "Mondverzorging",
+                "sub_sub_category": "Tandenborstels",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "20412",
+                "name": "Oral-B Mondwater Multi Protection 500 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Mondverzorging",
+                "sub_sub_category": "Mondwater & spray",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "20605",
+                "name": "Oral-B Opzetborstels Precision Clean 3 st",
+                "category": "Gezond & verzorging",
+                "sub_category": "Mondverzorging",
+                "sub_sub_category": "Tandenborstels",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "32499",
+                "name": "Oral-B Pro-Expert Premium Tandvleesbescherming Tandpasta 75 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Mondverzorging",
+                "sub_sub_category": "Tandpasta",
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "26971-Blauw-62-68": {
+        "data": [
+            {
+                "product_id": "26971-Blauw-62-68",
+                "name": "Baby Pyjama Blauw Maat 62-68",
+                "category": "Kleding & sieraden",
+                "sub_category": "Baby's en kinderen",
+                "sub_sub_category": "Babykleding",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "26969-Blauw-62-68",
+                "name": "Baby Rompertje Blauw Maat 62-68",
+                "category": "Kleding & sieraden",
+                "sub_category": "Baby's en kinderen",
+                "sub_sub_category": "Babykleding",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "26971-Blauw-56-62",
+                "name": "Baby Pyjama Blauw Maat 56-62",
+                "category": "Kleding & sieraden",
+                "sub_category": "Baby's en kinderen",
+                "sub_sub_category": "Babykleding",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "26971-Blauw-68-74",
+                "name": "Baby Pyjama Blauw Maat 68-74",
+                "category": "Kleding & sieraden",
+                "sub_category": "Baby's en kinderen",
+                "sub_sub_category": "Babykleding",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "26971-Blauw-80-86",
+                "name": "Baby Pyjama Blauw Maat 80-86",
+                "category": "Kleding & sieraden",
+                "sub_category": "Baby's en kinderen",
+                "sub_sub_category": "Babykleding",
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "45723": {
+        "data": [
+            {
+                "product_id": "45723",
+                "name": "L'Or\u00e9al Reinigingsmelk met Olie 200 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Gezichtsverzorging vrouw",
+                "sub_sub_category": "Reiniging",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "21087",
+                "name": "L Ore\u00e1l Dagcreme Triple Active Dry Sensitive 50 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Gezichtsverzorging vrouw",
+                "sub_sub_category": "Dagcreme",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "21811",
+                "name": "L'Or\u00e9al Oogcreme Revitalift 15 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Gezichtsverzorging vrouw",
+                "sub_sub_category": "Oogcreme en serum",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "24815",
+                "name": "L'Or\u00e9al Revitalift Reinigingsmelk 200 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Gezichtsverzorging vrouw",
+                "sub_sub_category": "Reiniging",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "41959",
+                "name": "L'Or\u00e9al Nachtcreme Revitalift Filler 50ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Gezichtsverzorging vrouw",
+                "sub_sub_category": "Nachtcreme",
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "29898-groen": {
+        "data": [
+            {
+                "product_id": "29898-groen",
+                "name": "Bargje Big Diepe Bordjes Groen 3 st",
+                "category": "Baby & kind",
+                "sub_category": "Baby accessoires",
+                "sub_sub_category": "Baby accessoires",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "29890",
+                "name": "Bargje Big Drinkpakjes Houder",
+                "category": "Baby & kind",
+                "sub_category": "Baby accessoires",
+                "sub_sub_category": "Baby accessoires",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "29890-blauw",
+                "name": "Bargje Big Drinkpakjes Houder Blauw",
+                "category": "Baby & kind",
+                "sub_category": "Baby accessoires",
+                "sub_sub_category": "Baby accessoires",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "29890-paars",
+                "name": "Bargje Big Drinkpakjes Houder Paars",
+                "category": "Baby & kind",
+                "sub_category": "Baby accessoires",
+                "sub_sub_category": "Baby accessoires",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "29891",
+                "name": "Bargje Big Zuigfles 250 ml 1 st",
+                "category": "Baby & kind",
+                "sub_category": "Baby accessoires",
+                "sub_sub_category": "Flessen en flessenspenen",
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "28155": {
+        "data": [
+            {
+                "product_id": "28155",
+                "name": "Spa Secrets Foam Bath 400 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Bad en douche",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "16542",
+                "name": "Vaseline Lip Therapy Rose & Almond Oil 20 g",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Lipverzorging",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "20701",
+                "name": "Adidas Douche Women Fresh Cool Mint 250ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Bad en douche",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "21209",
+                "name": "Gillette Venus Satin Care Scheergel Pure & Delicate 75 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Bad en douche",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "45512",
+                "name": "Puff Spons 2kleur",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Bad en douche",
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "45925": {
+        "data": [
+            {
+                "product_id": "45925",
+                "name": "Green Nature Aloe Vera Cooling Gel 150 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Geneesmiddelen",
+                "sub_sub_category": "Spierwrijfmiddelen",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "22783",
+                "name": "Dermalex Repair Creme Psoriasis 30 gr",
+                "category": "Gezond & verzorging",
+                "sub_category": "Geneesmiddelen",
+                "sub_sub_category": "Huidverzorging en koortslip",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "38670",
+                "name": "Tijgerbalsem Rood 30 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Geneesmiddelen",
+                "sub_sub_category": "Spierwrijfmiddelen",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "40800",
+                "name": "Tempo Pocked Edition Style Zakdoekjes 9 stuks",
+                "category": "Gezond & verzorging",
+                "sub_category": "Geneesmiddelen",
+                "sub_sub_category": "Luchtwegen en verkoudheid",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "47526",
+                "name": "Lucovitaal Koortslipcr\u00e8me SPF30 10 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Geneesmiddelen",
+                "sub_sub_category": "Huidverzorging en koortslip",
+                "sub_sub_sub_category": null
+            }
+        ]
+    },
+    "21236": {
+        "data": [
+            {
+                "product_id": "21236",
+                "name": "Syoss Shampoo Color & Volume 500 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Shampoo",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": [
+            {
+                "product_id": "32564",
+                "name": "Syoss Keratine Hair Perfection shampoo 50 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Shampoo",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "33223",
+                "name": "Syoss Renew7 Conditioner 500 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Conditioner",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "33224",
+                "name": "Syoss Renew7 Shampoo 500 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Shampoo",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "39251",
+                "name": "Syoss Shampoo Ceramide Anti-Haarbreuk 500 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Shampoo",
+                "sub_sub_sub_category": null
+            }
+        ]
+    }
+}

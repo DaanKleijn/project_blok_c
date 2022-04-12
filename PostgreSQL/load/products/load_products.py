@@ -1,4 +1,5 @@
 import PostgreSQL.load.products.queries as product_queries
+import PostgreSQL.connect_postgresql_database as sql_c
 
 
 def all_product_ids(sql_cursor):
@@ -20,8 +21,8 @@ def ordered_together_with(product, sql_cursor):
 
 def date_filtered(month, sql_cursor):
     """"""
-    product_query = product_queries.product_pop_month_query()
-    sql_cursor.execute(product_query.format(month))
+    product_query = product_queries.product_pop_month_query().format(month)
+    sql_cursor.execute(product_query)
 
     return [product[0] for product in sql_cursor.fetchall()]
 
@@ -34,3 +35,9 @@ def get_properties(product_ids, sql_cursor):
             if not properties[1]
             else (properties[3:], properties[1], properties[0])
             for properties in sql_cursor.fetchall()]
+
+
+if __name__ == '__main__':
+    con, cur = sql_c.connect()
+    print(date_filtered('2', cur))
+    sql_c.disconnect(con, cur)
