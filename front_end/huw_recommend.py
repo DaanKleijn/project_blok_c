@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 from recommendation_engines.bought_together import recommend as bought_together
 import recommendation_engines.trending_products.recommend as trending
 import recommendation_engines.popular_months.recommend as date_filtering
+import PostgreSQL.connect_postgresql_database as sql_c
 
 app = Flask(__name__)
 api = Api(app)
@@ -38,14 +39,18 @@ class Recom(Resource):
         print(profileid, count)
         profile_id, page_type, product_id = tuple(profileid.split(sep='.'))
         if str(page_type) == 'product':
-            return bought_together.recommend(product_id, count, sql_cursor), 200
+            return bought_together.recommending(product_id, count), 200
         if str(page_type) == 'category':
-            return trending.products_trending(count, sql_cursor), 200
+            return date_filtering.recommending(count), 200
         if str(page_type) == 'shoppingcart':
-            return date_filtering.recommend(count, sql_cursor), 200
+            return date_filtering.recommending(count), 200
         return None, 400
 
 
 # This method binds the Recom class to the REST API, to parse specifically
 # requests in the format described below.
 api.add_resource(Recom, "/<string:profileid>/<int:count>")
+
+
+if __name__ == '__main__':
+    app.run(debug=True, port=5001)
