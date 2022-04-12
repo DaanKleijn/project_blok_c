@@ -35,15 +35,9 @@ class Recom(Resource):
     def get(self, profileid, count):
         """ This function represents the handler for GET requests coming in
         through the API. It currently returns a random sample of products. """
-        print(profileid, count)
-        profile_id, page_type, product_id = tuple(profileid.split(sep='.'))
-        if str(page_type) == 'product':
-            return bought_together.recommend(product_id, count, sql_cursor), 200
-        if str(page_type) == 'category':
-            return trending.products_trending(count, sql_cursor), 200
-        if str(page_type) == 'shoppingcart':
-            return date_filtering.recommend(count, sql_cursor), 200
-        return None, 400
+        randcursor = database.products.aggregate([{ '$sample': { 'size': count } }])
+        prodids = list(map(lambda x: x['_id'], list(randcursor)))
+        return prodids, 200
 
 
 # This method binds the Recom class to the REST API, to parse specifically
