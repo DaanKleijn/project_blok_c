@@ -2,12 +2,21 @@ import time
 import PostgreSQL.connect_postgresql_database as sql_c
 import PostgreSQL.load.products.queries as load_products
 import PostgreSQL.load.traffic.load_traffic as traffic
-import PostgreSQL.load.traffic.traffic_functions as traffic_f
 import PostgreSQL.insert.popular_month as update_sql
 
 # TODO: account for months where there is more traffic in general. (if a product is bought and looked at 20 % more than
 #  average in a given month, but on average all products were bought and looked at 20 % more in that month, the traffic
 #  for the product should not be considered above average) -> also find a better way to formulate this.
+
+
+def get_overall_bar(traffic_per_month):
+    """
+    Takes a list with 12 count values. Each value represents the amount of hits a given product has ever received in
+    during a month. Calculates the minimum amount of hits a product has to receive any given month for that traffic to
+    be significantly higher. (140 % + 50)
+    """
+    average_traffic = sum(traffic_per_month) / 12
+    return average_traffic * 1.4 + 50
 
 
 def get_popular_months(traffic_per_month):
@@ -16,7 +25,7 @@ def get_popular_months(traffic_per_month):
     more traffic than other months.
     Returns these months as integers in a formatted string. (e.g. '4, 5'); returns None if no popular months are found.
     """
-    bar = traffic_f.get_overall_bar(traffic_per_month)
+    bar = get_overall_bar(traffic_per_month)
     popular_months = ''
 
     for traffic_month in traffic_per_month:
@@ -67,8 +76,7 @@ def initiate_popular_months(sql_connection, sql_cursor):
     update_sql.create_column_popular_months(sql_connection, sql_cursor)
 
     product_popular_months = calculate_popular_months_products(sql_cursor)
-    update_pop_month = update_sql.update_popular_month_query()
-    sql_cursor.execute(update_pop_month, product_popular_months)
+    update_sql.update_popular_month(sql_cursor, product_popular_months)
 
     sql_connection.commit()
 
@@ -82,9 +90,7 @@ def update_popular_months(sql_connection, sql_cursor):
     start_time = time.time_ns()
 
     product_popular_months = calculate_popular_months_products(sql_cursor)
-
-    update_pop_month = update_sql.update_popular_month_query()
-    sql_cursor.executemany(update_pop_month, product_popular_months)
+    update_sql.update_popular_month(sql_cursor, product_popular_months)
 
     sql_connection.commit()
     return '{:.4f} secondes'.format((time.time_ns() - start_time) / 1000000000)
