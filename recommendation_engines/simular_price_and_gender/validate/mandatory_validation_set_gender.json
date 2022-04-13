@@ -1,0 +1,54 @@
+{
+    "16862": {
+        "data": [
+            {
+                "product_id": "16862",
+                "name": "Pampers Sensitive Babydoekjes 12 st",
+                "category": "Baby & kind",
+                "sub_category": "Luiers en verschonen",
+                "sub_sub_category": "Babydoekjes",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": []
+    },
+    "45108": {
+        "data": [
+            {
+                "product_id": "45108",
+                "name": "Nokia 105 Wit 4 MB",
+                "category": "Elektronica & media",
+                "sub_category": "Elektronica & media",
+                "sub_sub_category": "Telefonie",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": []
+    },
+    "23866": {
+        "data": [
+            {
+                "product_id": "23866",
+                "name": "Neutral Wasmiddel Vloeibaar Wit Parfumvrije 1425 ml",
+                "category": "Huishouden",
+                "sub_category": "Wassen en schoonmaken",
+                "sub_sub_category": "Wasmiddel",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": []
+    },
+    "7691": {
+        "data": [
+            {
+                "product_id": "7691",
+                "name": "Head & Shoulders Shampoo Colour 300 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Haarverzorging",
+                "sub_sub_category": "Shampoo",
+                "sub_sub_sub_category": null
+            }
+        ],
+        "recommendations": []
+    }
+}

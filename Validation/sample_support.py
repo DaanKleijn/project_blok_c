@@ -5,7 +5,7 @@ import random
 import PostgreSQL.connect_postgresql_database as sql_c
 import json
 
-random_sample_file = 'C:\\Users\\sfjbr\\PycharmProjects\\project_blok_c\\Validation\\samples.json'
+random_sample_file = 'C:\\Users\\daank\\PycharmProjects\\project_blok_c\\Validation\\samples.json'
 
 
 def load_random_products(sql_cursor, amount=20):
