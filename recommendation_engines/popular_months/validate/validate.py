@@ -1,3 +1,5 @@
+# This file is dedicated to creating a dataset used to validate the date filtering algorithm.
+
 import PostgreSQL.connect_postgresql_database as sql_c
 import Validation.data_conversion as convert_data
 import recommendation_engines.popular_months.recommend as popular_months
@@ -7,6 +9,7 @@ mandatory_validation_file = 'mandatory_validation_set.json'
 
 
 def get_samples(sql_cursor):
+    """"""
     months = [str(month) for month in range(1, 13)]
     result = {}
     print(months)
@@ -18,6 +21,7 @@ def get_samples(sql_cursor):
 
 
 def take_samples():
+    """"""
     sql_connection, sql_cursor = sql_c.connect()
     validation_products = get_samples(sql_cursor)
     convert_data.samples_other_dict(products=validation_products,

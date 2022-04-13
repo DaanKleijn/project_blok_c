@@ -1,7 +1,10 @@
+# This file is dedicated to queries, used to fetch data about product traffic (views or sales) out of the SQL database.
+
 def traffic_all_time_query():
     """
     Returns a query to fetch the product_id and the amount of times the product was bought during a given month.
-    Format order is: month_value, product_ids"""
+    Format order is: month_value, product_ids
+    """
     # source: https://stackoverflow.com/questions/50334946/executemany-select-queries-with-psycopg2
     return """SELECT COUNT(ep.product__id), p.product__id 
     FROM event_products ep, sessions s, products p
@@ -14,7 +17,12 @@ def traffic_all_time_query():
 
 
 def traffic_all_time_formatted_query(amount_of_values):
-    """"""
+    """
+    Takes an amount of values (int) as input. Returns a query to fetch the product_id and the amount of times the
+    product was bought during a given month.
+    Format order is: month_value, product_ids.
+    The input amount has to be the amount of product ids you want to pass along to this query.
+    """
     return """SELECT COUNT(ep.product__id), p.product__id 
     FROM event_products ep, sessions s, products p
     WHERE EXTRACT(MONTH FROM s.session_end) = %s
@@ -28,7 +36,7 @@ def traffic_all_time_formatted_query(amount_of_values):
 def traffic_day_query():
     """
     Returns all items that were bought with the amount of times it was bought since a given date.
-    Format order is: date_value
+    Format order is: date_value.
     """
     # sadly, we can't call the other function and return that formatted, because the two different types of formatting
     # won't work together when they are embedded like that.
@@ -44,7 +52,7 @@ def traffic_day_query():
 def traffic_year_query():
     """
     Returns a query to fetch the amount a product is bought and the product_id, ever since a given date, for all given
-    products. Format order is: date_value, product_ids
+    products. Format order is: date_value, product_ids.
     """
     # source: https://stackoverflow.com/questions/50334946/executemany-select-queries-with-psycopg2
     return """SELECT COUNT(ep.product__id), p.product__id 
@@ -57,8 +65,12 @@ def traffic_year_query():
     GROUP BY p.product__id;"""
 
 
-def traffic_year_formatted_query(amount_of_values):
-    """"""
+def traffic_year_formatted_query(amount):
+    """
+    Takes an amount (of products) (int) as input. Returns a query to fetch the amount of sales of a product ever since a
+    given date, for all given products. Format order is: date_value, product_ids.
+    The input amount has to be the amount of product ids you want to pass along to this query.
+    """
     # sadly, we can't call the other function and return that formatted, because the two different types of formatting
     # won't work together when they are embedded like that.
     return """SELECT COUNT(ep.product__id), p.product__id 
@@ -68,4 +80,4 @@ def traffic_year_formatted_query(amount_of_values):
     AND ep.product__id = p.product__id
     AND ep.event_type = 'ordered'
     AND ep.product__id IN ({})
-    GROUP BY p.product__id;""".format(','.join(['%s'] * amount_of_values))
+    GROUP BY p.product__id;""".format(','.join(['%s'] * amount))

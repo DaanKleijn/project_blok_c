@@ -11,9 +11,10 @@ import PostgreSQL.insert.popular_month as update_sql
 
 def get_overall_bar(traffic_per_month):
     """
-    Takes a list with 12 count values. Each value represents the amount of hits a given product has ever received in
-    during a month. Calculates the minimum amount of hits a product has to receive any given month for that traffic to
-    be significantly higher. (140 % + 50)
+    Takes a list with 12 count values (list) [int] as input. Each value represents the amount of hits a given product
+    has ever received during a month.
+    Calculates the minimum amount of times a product has be sold any given month for that traffic to be significant.
+    (140 % + 50)
     """
     average_traffic = sum(traffic_per_month) / 12
     return average_traffic * 1.4 + 50
@@ -21,10 +22,12 @@ def get_overall_bar(traffic_per_month):
 
 def get_popular_months(traffic_per_month):
     """
-    Takes a list with traffic per month (list) [int] for a product as input. Calculates if any month gets significantly
-    more traffic than other months.
-    Returns these months as integers in a formatted string. (e.g. '4, 5'); returns None if no popular months are found.
+    Takes a list with traffic per month (list) [int] for a product as input.
+    Calculates if any month gets significantly more traffic than other months.
+    Returns these months as integers in a formatted string. (e.g. '4, 5');
+    returns None if no popular months are found.
     """
+    # gets amount of traffic the month has to beat to be significant
     bar = get_overall_bar(traffic_per_month)
     popular_months = ''
 
@@ -41,9 +44,11 @@ def get_popular_months(traffic_per_month):
 
 def calculate_popular_months_products(sql_cursor):
     """
+    Takes an SQL cursor as input.
     Fetches all product_ids. Fetches the amount of times the product has been sold per month, per product. Calculates
-    per product if there are months with significantly more traffic (products sold per month). Significant is 140% + 50
-    amount of sales. Adds the popular_months and product_id in a tuple to a list.
+    per product if there are months with significantly higher traffic (products sold per month).
+    Significant is 140% + 50 amount of sales.
+    Adds the popular_months and product_id in a tuple to a list.
     Returns this list [(str, str)].
     """
     products_query = load_products.all_product_ids_query()
@@ -53,14 +58,20 @@ def calculate_popular_months_products(sql_cursor):
 
     products = [str(product[0]) for product in sql_cursor.fetchall()]
     all_traffic = traffic.get_all_traffic_per_month(products, months, sql_cursor)
+    # cycles through all products
     for product in products:
         product_traffic = list()
+        # cycles for every month
         for month_index in range(12):
+            # tries to fetch the number of sales from the traffic dictionary. Adds it to the traffic list.
             try:
                 product_traffic.append(all_traffic[str(month_index)][product])
+            # if this product has never been sold in this month, adds a zero to the traffic list
             except KeyError:
                 product_traffic.append(0)
+        # calculates if some months are more popular than others, using the traffic list.
         pop_months = get_popular_months(product_traffic)
+        # adds these popular months with the product_id in a tuple to the list we want to return.
         product_popular_months.append((pop_months, product))
 
     return product_popular_months
@@ -68,24 +79,23 @@ def calculate_popular_months_products(sql_cursor):
 
 def initiate_popular_months(sql_connection, sql_cursor):
     """
+    Takes an SQL connection and cursor as input.
     In the SQL database, creates the popular_month column in the products table.
-    Fetches products and their past traffic. Traffic is made out of unique purchases.
-    Calculates per product if they are sold significantly more in certain months. Updates the popular_month column in
+    Fetches products. Per product, fetches the amount of times it has been sold in the past (ever). Calculates per
+    product if they are sold significantly more in certain months. Updates the popular_month column in
     the product table with this value.
     """
     update_sql.create_column_popular_months(sql_connection, sql_cursor)
 
-    product_popular_months = calculate_popular_months_products(sql_cursor)
-    update_sql.update_popular_month(sql_cursor, product_popular_months)
-
-    sql_connection.commit()
+    return update_popular_months(sql_connection, sql_cursor)
 
 
 def update_popular_months(sql_connection, sql_cursor):
     """
-    Fetches products and their past traffic. Traffic is made out of unique purchases.
-    Calculates per product if they are sold significantly more in certain months. Updates the popular_month column in
-    the product table with this value.
+    Takes an SQL connection and cursor as input.
+    Fetches products. Per product, fetches the amount of times it has been sold in the past (ever). Calculates per
+    product if they are sold significantly more in certain months.
+    Updates the popular_month column in the product table with this value.
     """
     start_time = time.time_ns()
 

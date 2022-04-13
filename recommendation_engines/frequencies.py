@@ -1,7 +1,10 @@
+# This file contains a few functions to create frequency_count dictionaries, and find low and high counting items in
+# them.
+
 def get_frequency(a_list):
     """
     Takes a list as input. Counts how many times each element occurs and returns each unique element in a dict together
-    with the count. (dict) {:int}
+    with the count (dict) {element: int}.
     """
     result = dict()
     for item in a_list:

@@ -1,3 +1,7 @@
+# This file is dedicated to loading in all the data about sessions that is currently recorded in the MongoDB database,
+# into the SQL database.
+# In the SQL database, the sessions and event_products tables are updated. The MongoDB database isn't changed.
+
 import psycopg2.extras
 import psycopg2.errors
 import MongoDB.connect_mongodb as mdb_c

@@ -1,3 +1,6 @@
+# This file is dedicated to the connection with the database. You can use it to create a connection with cursor, and
+# disconnect from this connection.
+
 import psycopg2
 
 
@@ -10,7 +13,7 @@ def connect():
         connection = psycopg2.connect(host='localhost',
                                       database='huwebshop',
                                       user='postgres',
-                                      password='postgres',
+                                      password='password',
                                       port=5432)
 
         # creates cursor
@@ -24,6 +27,6 @@ def connect():
 
 
 def disconnect(connection, cursor):
-    """Takes an active cursor and connection with a PostgreSQL database as input. Closes the cursor and connection."""
+    """Takes an active cursor and connection with an SQL database as input. Closes the cursor and the connection."""
     cursor.close()
     connection.close()

@@ -1,3 +1,5 @@
+# This file is dedicated to making a connection with the MongoDB database.
+
 import pymongo
 
 

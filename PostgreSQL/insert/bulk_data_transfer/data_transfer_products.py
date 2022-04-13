@@ -1,3 +1,6 @@
+# This file is dedicated to loading in all the data about products that is currently recorded in the MongoDB database,
+# into the SQL database. In the SQL database, the products table is updated. The MongoDB database isn't changed.
+
 import MongoDB.connect_mongodb as mdb_c
 import PostgreSQL.connect_postgresql_database as sql_c
 import transfer_functions as shared

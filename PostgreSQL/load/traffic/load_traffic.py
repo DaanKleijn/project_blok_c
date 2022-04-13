@@ -1,21 +1,31 @@
+# This file is dedicated to fetching data about product traffic (views or sales) from the SQL database.
+
 import PostgreSQL.load.traffic.traffic_queries as traffic_queries
 from datetime import timedelta
 
 
 def get_all_traffic_per_month(products, months, sql_cursor):
     """
-    Takes a list with the month (list) [(str)] (['1', '2', '3'...]) and products (list) (str) as input.
-    calculates the amount of times that product was bought for every month and puts these values in a
-    dict with the product_id as key. Returns this dict.
+    Takes a list with the months (list) [str] (months represented by integers ['1', '2', '3'...]), products (list)
+    [str] and an SQL cursor as input.
+    Counts the amount of times that product was bought per month and puts these values in a dict.
+    Returns this dict (dict) {month: {product_id : month_count}}.
+
+    This might seem like a really convoluted way to record the counts. Why not just use a list?
+    Not all product are sold in every month. When there is no sale, there will be no count for the database to return.
+    The product_id will also not be returned. So not all list would result in 12 items. For incomplete lists, it will
+    be impossible to tell with certainty which months the index refer to. It is a hassle to deal with this incomplete
+    data at this point, so we save it to a dict like this and deal with it later.
     """
     traffic_per_month = dict()
-    print(products)
     traffic_query = traffic_queries.traffic_all_time_formatted_query(len(products))
 
     for month in months:
         traffic_per_month[month] = dict()
         sql_cursor.execute(traffic_query, (month,) + tuple(products))
+        # fetches amount of sales this month (ever), together with the product id.
         product_count = sql_cursor.fetchall()
+        # records the amount of hits for the product this month.
         for hits, product in product_count:
             traffic_per_month[month][product] = hits
 
@@ -24,7 +34,7 @@ def get_all_traffic_per_month(products, months, sql_cursor):
 
 def get_daily_traffic(date, sql_cursor):
     """
-    Takes the current date (datetime) and a list of products (list) (str) as input.
+    Takes the current date (datetime) and an SQL cursor as input.
     Returns all products that were bought over the last seven days, together with the amount of times they were bought
     (dict) {product: count}.
     """
@@ -45,8 +55,8 @@ def get_daily_traffic(date, sql_cursor):
 
 def get_yearly_traffic(products, date, sql_cursor):
     """
-    Takes a list of product_id (str) as input.
-    Returns the amount of times that product was bought that year. (int).
+    Takes a list of product_id (str), the current date (datetime) and an SQL cursor as input.
+    Returns the amount of times that product was bought in the last year. (int).
     """
     minimum_date = date - timedelta(days=365)
     traffic_query = traffic_queries.traffic_year_formatted_query(len(products))

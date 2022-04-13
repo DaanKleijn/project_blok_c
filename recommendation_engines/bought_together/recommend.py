@@ -1,5 +1,7 @@
+# This file is dedicated to recommending products following the bought together algorithm.
+
 import PostgreSQL.connect_postgresql_database as sql_c
-import recommendation_engines.statistics as stats
+import recommendation_engines.frequencies as stats
 import PostgreSQL.load.products.load_products as sql_load
 
 
@@ -16,7 +18,13 @@ def recommend_products(product_id, product_amount, sql_cursor):
 
 
 def recommending(product_id, product_amount):
-    """"""
+    """
+    Takes a product id (str) and a product_amount (int) as input. Connects to the SQL database. Fetches products
+    that, in a previous session, have been bought together with the input product and find which products have been
+    bought together most with this product.
+    Returns the specified amount of products that have been bought together with the input product the most often
+    (list) [str].
+    """
     sql_connection, sql_cursor = sql_c.connect()
     recommended_prods = recommend_products(product_id, product_amount, sql_cursor)
     sql_c.disconnect(sql_connection, sql_cursor)
