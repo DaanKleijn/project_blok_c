@@ -22,17 +22,17 @@ def random_sampling_gender(sample_type='random_samples'):
     return result
 
 
-# def random_sampling_price(sql_cursor, sample_type='random_samples'):
-#     """
-#     Takes an SQL cursor and optionally a sample type (str) as input. Loads the specified type of samples and fetches the
-#     recommendations according to the bought together algorithm. The fetched recommendations are in a list.
-#     Returns fetched products with the product id (dict) {product_id: [recommended_products]} {str: [str]}.
-#     """
-#     products = sample_support.load_samples(sample_type)
-#     result = {}
-#     for product in products:
-#         result[product] = simular_price(product, 4, sql_cursor)
-#     return result
+def random_sampling_price(sql_cursor, sample_type='random_samples'):
+    """
+    Takes an SQL cursor and optionally a sample type (str) as input. Loads the specified type of samples and fetches the
+    recommendations according to the bought together algorithm. The fetched recommendations are in a list.
+    Returns fetched products with the product id (dict) {product_id: [recommended_products]} {str: [str]}.
+    """
+    products = sample_support.load_samples(sample_type)
+    result = {}
+    for product in products:
+        result[product] = simular_price(product, 4)
+    return result
 
 
 def take_mandatory_sampling_gender():
@@ -48,19 +48,19 @@ def take_mandatory_sampling_gender():
     sql_c.disconnect(sql_connection, sql_cursor)
 
 
-# def take_mandatory_sampling_price():
-#     """
-#     Creates a validation set for the bought together algorithm with the mandatory samples. Saves the set to
-#     mandatory_validation_set.json.
-#     """
-#     sql_connection, sql_cursor = sql_c.connect()
-#     random_products = random_sampling_price(sql_cursor, 'mandatory_samples')
-#     convert_data.samples_product_dict(products=random_products,
-#                                       sql_cursor=sql_cursor,
-#                                       json_file=mandatory_validation_file_price)
-#     sql_c.disconnect(sql_connection, sql_cursor)
+def take_mandatory_sampling_price():
+    """
+    Creates a validation set for the bought together algorithm with the mandatory samples. Saves the set to
+    mandatory_validation_set.json.
+    """
+    sql_connection, sql_cursor = sql_c.connect()
+    random_products = random_sampling_price(sql_cursor, 'mandatory_samples')
+    convert_data.samples_product_dict(products=random_products,
+                                      sql_cursor=sql_cursor,
+                                      json_file=mandatory_validation_file_price)
+    sql_c.disconnect(sql_connection, sql_cursor)
 
 
 if __name__ == '__main__':
     take_mandatory_sampling_gender()
-    # take_mandatory_sampling_price()
+    take_mandatory_sampling_price()

@@ -37,9 +37,11 @@ def simular_price(product_id, amount=4):
 
     for i in range(0, amount):
         index = random.randint(0, len(simular_products))
-        new_product_price = simular_products[index]
-        new_product_list.append(new_product_price)
-        del simular_products[index]
+        try:
+            new_product_price = simular_products[index]
+            new_product_list.append(new_product_price)
+        except IndexError:
+            break
 
     return new_product_list
 
