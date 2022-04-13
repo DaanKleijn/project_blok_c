@@ -22,7 +22,6 @@ def simular_gender(product_id, amount=4):
 
 
 def simular_price(product_id, amount=4):
-
     con, cur = sql_c.connect()
     product_query = product_price()
     cur.execute(product_query, (product_id,))

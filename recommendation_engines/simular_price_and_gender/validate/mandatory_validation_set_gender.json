@@ -12,35 +12,35 @@
         ],
         "recommendations": [
             {
-                "product_id": "39781",
-                "name": "First Doll, My Love Baby",
+                "product_id": "33806",
+                "name": "Nutrilon Pronutra+ Opvolgmelk Standaard 3 Vanaf 10 Maanden 800 gr",
                 "category": "Baby & kind",
-                "sub_category": "Speelgoed",
-                "sub_sub_category": "Speelgoed",
+                "sub_category": "Babyvoeding",
+                "sub_sub_category": "Flesvoeding",
                 "sub_sub_sub_category": null
             },
             {
-                "product_id": "29895-groen",
-                "name": "Bargje Big Fopspeen Kers Groen/Blauw Meisje Maat S 2 st",
+                "product_id": "33898",
+                "name": "Zwitsal Billenzalf Tegen Rode Billetjes 150 ml",
+                "category": "Baby & kind",
+                "sub_category": "Babyverzorging",
+                "sub_sub_category": "Baby huidverzorging",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "35074",
+                "name": "Nutrilon Dreumesmelk 4 Vanaf 1 Jaar 800 gr",
+                "category": "Baby & kind",
+                "sub_category": "Babyvoeding",
+                "sub_sub_category": "Flesvoeding",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "42528",
+                "name": "Playskool Opvouwbare Vormen Emmer Kat",
                 "category": "Baby & kind",
                 "sub_category": "Baby accessoires",
-                "sub_sub_category": "Fopspenen",
-                "sub_sub_sub_category": null
-            },
-            {
-                "product_id": "45456",
-                "name": "Proderm Babydoekjes Sensitive 63 st",
-                "category": "Baby & kind",
-                "sub_category": "Luiers en verschonen",
-                "sub_sub_category": "Babydoekjes",
-                "sub_sub_sub_category": null
-            },
-            {
-                "product_id": "29877-hartjes",
-                "name": "NUK Fopspeen Freestyle Blauw Hartjes 6 - 18 mnd 1 st",
-                "category": "Baby & kind",
-                "sub_category": "Baby accessoires",
-                "sub_sub_category": "Fopspenen",
+                "sub_sub_category": "Baby speelgoed",
                 "sub_sub_sub_category": null
             }
         ]
@@ -71,27 +71,27 @@
         ],
         "recommendations": [
             {
-                "product_id": "27105",
-                "name": "Bref Chlorine WC Powerballs 50 gr",
+                "product_id": "20804",
+                "name": "Andy Allesreiniger Citroenfris 750 ml",
                 "category": "Huishouden",
-                "sub_category": "Toilet en keuken",
-                "sub_sub_category": "Toiletblokken",
+                "sub_category": "Wassen en schoonmaken",
+                "sub_sub_category": "Schoonmaken",
                 "sub_sub_sub_category": null
             },
             {
-                "product_id": "27716",
-                "name": "Robijn Fleur & Fijn Waspoeder 64 wasbeurten 3,52 kg",
+                "product_id": "27337",
+                "name": "Neutral Parfumvrij Waspoeder 1,188 g",
                 "category": "Huishouden",
                 "sub_category": "Wassen en schoonmaken",
                 "sub_sub_category": "Wasmiddel",
                 "sub_sub_sub_category": null
             },
             {
-                "product_id": "29567",
-                "name": "Bref Dennen Houder + 3 Vullingen WC-reiniger",
+                "product_id": "27731",
+                "name": "Omo Waspoeder Wit 54 Wasbeurten",
                 "category": "Huishouden",
-                "sub_category": "Toilet en keuken",
-                "sub_sub_category": "Toiletblokken",
+                "sub_category": "Wassen en schoonmaken",
+                "sub_sub_category": "Wasmiddel",
                 "sub_sub_sub_category": null
             },
             {

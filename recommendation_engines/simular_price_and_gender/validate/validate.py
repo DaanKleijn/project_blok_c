@@ -12,7 +12,7 @@ mandatory_validation_file_price = 'mandatory_validation_set_price.json'
 def random_sampling_gender(sample_type='random_samples'):
     """
     Takes an SQL cursor and optionally a sample type (str) as input. Loads the specified type of samples and fetches the
-    recommendations according to the bought together algorithm. The fetched recommendations are in a list.
+    recommendations according to the simular gender algorithm. The fetched recommendations are in a list.
     Returns fetched products with the product id (dict) {product_id: [recommended_products]} {str: [str]}.
     """
     products = sample_support.load_samples(sample_type)
@@ -22,10 +22,10 @@ def random_sampling_gender(sample_type='random_samples'):
     return result
 
 
-def random_sampling_price(sql_cursor, sample_type='random_samples'):
+def random_sampling_price(sample_type='random_samples'):
     """
     Takes an SQL cursor and optionally a sample type (str) as input. Loads the specified type of samples and fetches the
-    recommendations according to the bought together algorithm. The fetched recommendations are in a list.
+    recommendations according to the simular price algorithm. The fetched recommendations are in a list.
     Returns fetched products with the product id (dict) {product_id: [recommended_products]} {str: [str]}.
     """
     products = sample_support.load_samples(sample_type)
