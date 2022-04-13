@@ -1,3 +1,7 @@
+# This file is dedicated to loading in all the data about profiles that is currently recorded in the MongoDB database,
+# into the SQL database.
+# In the SQL database, the profiles and buids tables are updated. The MongoDB database isn't changed.
+
 import MongoDB.connect_mongodb as mdb_c
 import PostgreSQL.connect_postgresql_database as sql_c
 import transfer_functions as shared
@@ -12,8 +16,8 @@ def create_profile_query():
     - the latest activity
     Returns this query (str).
     """
-    return """INSERT INTO profiles (profile__id, latest_activity) 
-    VALUES (%s, %s);"""
+    return """INSERT INTO profiles (profile__id, latest_activity, profile_type) 
+    VALUES (%s, %s, %s);"""
 
 
 def create_buid_query():
@@ -37,7 +41,8 @@ def get_profile_values(profile):
     Returns the profile_values (tuple) (str, datetime)
     """
     return [(str(profile['_id']),
-            shared.secure_dict_fetch(profile, 'latest_activity'))]
+            shared.secure_dict_fetch(profile, 'latest_activity'),
+             shared.secure_dict_fetch_double(profile, 'recommendations', 'segment'))]
 
 
 # upload

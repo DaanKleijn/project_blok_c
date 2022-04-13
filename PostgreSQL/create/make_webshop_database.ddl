@@ -1,3 +1,6 @@
+-- This file is dedicated to creating the SQL database. It creates five tables: products, profiles, buid, sessions and
+-- event_products.
+
 CREATE TABLE products (
 	product__id 				VARCHAR 			CONSTRAINT c_prod_pk_id 			PRIMARY KEY,
 	brand 						VARCHAR,
@@ -38,7 +41,8 @@ CREATE TABLE products (
 
 CREATE TABLE profiles(
 	profile__id 	VARCHAR							CONSTRAINT c_prof_pk 				PRIMARY KEY,
-	latest_activity TIMESTAMP WITH TIME ZONE
+	latest_activity TIMESTAMP WITH TIME ZONE,
+	profile_type    VARCHAR
 );
 
 CREATE TABLE buids(
