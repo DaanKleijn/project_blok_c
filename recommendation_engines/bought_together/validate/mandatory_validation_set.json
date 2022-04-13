@@ -28,8 +28,8 @@
                 "sub_sub_sub_category": null
             },
             {
-                "product_id": "32484",
-                "name": "Pampers Baby-Dry Luiers Maat 5 | 11-16 kg | 23 st",
+                "product_id": "32481",
+                "name": "Pampers Luiers Baby Dry #4+ 24st",
                 "category": "Baby & kind",
                 "sub_category": "Luiers en verschonen",
                 "sub_sub_category": "Luiers",
@@ -82,8 +82,8 @@
                 "sub_sub_sub_category": null
             },
             {
-                "product_id": "46462",
-                "name": "Alcatel 10.66D Zwart Dual Sim i.c.m. Lebara SIM",
+                "product_id": "45558",
+                "name": "Gigaset DECT A116 Zwart 1 toestel",
                 "category": "Elektronica & media",
                 "sub_category": "Elektronica & media",
                 "sub_sub_category": "Telefonie",
@@ -104,14 +104,6 @@
         ],
         "recommendations": [
             {
-                "product_id": "16868",
-                "name": "Pampers Babydoekjes Sensitive 56 st",
-                "category": "Baby & kind",
-                "sub_category": "Luiers en verschonen",
-                "sub_sub_category": "Babydoekjes",
-                "sub_sub_sub_category": null
-            },
-            {
                 "product_id": "25114",
                 "name": "Zwitsal Billendoekjes Lotion 12x72 st",
                 "category": "Baby & kind",
@@ -120,11 +112,19 @@
                 "sub_sub_sub_category": null
             },
             {
-                "product_id": "42678",
-                "name": "Mullrose Ruitensproeiervloeistof Winter 5L",
-                "category": "Wonen & vrije tijd",
-                "sub_category": "Outdoor en vrije tijd",
-                "sub_sub_category": "Outdoor en vrije tijd",
+                "product_id": "3485",
+                "name": "Dove Deodorant Spray Invisible Dry 150 ml",
+                "category": "Gezond & verzorging",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Deodorant",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "36463",
+                "name": "Pampers Baby-Dry Luiers Maat 3 | 4-9 kg | 90 st",
+                "category": "Baby & kind",
+                "sub_category": "Luiers en verschonen",
+                "sub_sub_category": "Luiers",
                 "sub_sub_sub_category": null
             },
             {
@@ -150,16 +150,8 @@
         ],
         "recommendations": [
             {
-                "product_id": "24858",
-                "name": "Head & Shoulders Shampoo Smooth en Silky 200 ml",
-                "category": "Gezond & verzorging",
-                "sub_category": "Haarverzorging",
-                "sub_sub_category": "Shampoo",
-                "sub_sub_sub_category": null
-            },
-            {
-                "product_id": "29038",
-                "name": "Head & Shoulders 2in1 Classic 255 ml",
+                "product_id": "2876",
+                "name": "Head & Shoulders Shampoo For Men 300 ml",
                 "category": "Gezond & verzorging",
                 "sub_category": "Haarverzorging",
                 "sub_sub_category": "Shampoo",
@@ -174,11 +166,19 @@
                 "sub_sub_sub_category": null
             },
             {
-                "product_id": "44230",
-                "name": "Head and Shoulders Moisturizing Scalp Care 200 ml",
+                "product_id": "36246",
+                "name": "Ariel Waspoeder Color 140 wasbeurten 9100 gr",
+                "category": "Huishouden",
+                "sub_category": "Wassen en schoonmaken",
+                "sub_sub_category": "Wasmiddel",
+                "sub_sub_sub_category": null
+            },
+            {
+                "product_id": "44658",
+                "name": "Vogue Deospray Woman Extravagant 150ml",
                 "category": "Gezond & verzorging",
-                "sub_category": "Haarverzorging",
-                "sub_sub_category": "Shampoo",
+                "sub_category": "Lichaamsverzorging",
+                "sub_sub_category": "Deodorant",
                 "sub_sub_sub_category": null
             }
         ]
