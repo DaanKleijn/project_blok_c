@@ -14,7 +14,6 @@ CREATE TABLE products (
 	availability 				INT,
 	discount 					VARCHAR,
 	doelgroep 					VARCHAR,
-	eenheid 					VARCHAR,
 	factor 						VARCHAR,
 	geschiktvoor 				VARCHAR,
 	geursoort 					VARCHAR,

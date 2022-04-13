@@ -6,7 +6,7 @@ import PostgreSQL.connect_postgresql_database as sql_c
 def simular_gender(product_id, amount=4):
     con, cur = sql_c.connect()
     product_query = product_gender()
-    cur.execute(product_query, (product_id, product_id, product_id))
+    cur.execute(product_query, (product_id, product_id, product_id, ))
     similar_products = [product_id[0] for product_id in cur.fetchall()]
     new_product_gender_list = []
 
@@ -19,6 +19,7 @@ def simular_gender(product_id, amount=4):
 
 
 def simular_price(product_id, amount=4):
+
     con, cur = sql_c.connect()
     product_query = product_price()
     cur.execute(product_query, (product_id,))
