@@ -18,7 +18,7 @@ def random_sampling_gender(sample_type='random_samples'):
     products = sample_support.load_samples(sample_type)
     result = {}
     for product in products:
-        result[product] = simular_gender(product, 0)
+        result[product] = simular_gender(product, 4)
     return result
 
 

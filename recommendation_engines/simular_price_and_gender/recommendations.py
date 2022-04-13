@@ -12,8 +12,11 @@ def simular_gender(product_id, amount=4):
 
     for i in range(0, amount):
         index = random.randint(0, len(similar_products))
-        new_product_gender = similar_products[index]
-        new_product_gender_list.append(new_product_gender)
+        try:
+            new_product_gender = similar_products[index]
+            new_product_gender_list.append(new_product_gender)
+        except IndexError:
+            break
 
     return new_product_gender_list
 
