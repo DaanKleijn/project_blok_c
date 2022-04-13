@@ -67,13 +67,22 @@ CREATE TABLE event_products(
     CONSTRAINT c_e_fk_pid                               FOREIGN KEY (product__id)           REFERENCES products(product__id)
 );
 
+CREATE TABLE similars (
+    owner_product__id       VARCHAR,
+    similar_product__id     VARCHAR,
+    CONSTRAINT c_s_pk       PRIMARY KEY (owner_product__id,
+                                         similar_product__id),
+	CONSTRAINT c_b_fk_pid	FOREIGN KEY (owner_product__id)     REFERENCES products(product__id),
+    CONSTRAINT c_b_fk_spid	FOREIGN KEY (similar_product__id) 	REFERENCES products(product__id)
+);
+
 -- trigger that skips all products with a null value for name or price.
 CREATE FUNCTION trigger_nn_product()
    RETURNS TRIGGER
    LANGUAGE PLPGSQL
 AS $$
 BEGIN
-	IF (NEW.selling_price IS NULL OR NEW.product_name IS NULL)
+	IF (NEW.selling_price IS NULL OR NEW.product_name IS NULL OR NEW.category IS NULL)
 		THEN RETURN NULL;
 	ELSE
 		RETURN NEW;
